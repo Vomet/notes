@@ -1,0 +1,1200 @@
+{
+  "vaultName": "Public Notes",
+  "lastExport": 1712607416272,
+  "pluginVersion": "1.8.01",
+  "validBodyClasses": "publish css-settings-manager theme-light show-inline-title active-line fancy-code fancy-highlight h2-underline",
+  "useCustomHeadContent": false,
+  "useCustomFavicon": false,
+  "files": [
+    "AP Calculus Notes/01 Limits - AP Calculus AB.md",
+    "AP Calculus Notes/02 Derivatives - AP Calculus AB.md",
+    "AP Calculus Notes/3.1 Extrema on an Interval.md",
+    "AP Calculus Notes/3.2 Rolle's Theorem and Mean Value Theorem.md",
+    "AP Calculus Notes/3.3 The First Derivative Test and Increasing and Decreasing Functions.md",
+    "AP Calculus Notes/3.4 The Second Derivative Test and Concavity.md",
+    "AP Calculus Notes/3.6 Curve Sketching.md",
+    "AP Calculus Notes/04 Integration  - AP Calculus AB.md",
+    "AP Calculus Notes/4.1 Integrals.md",
+    "AP Calculus Notes/4.3 Riemann Sums and Definite Integrals.md",
+    "AP Calculus Notes/4.4 Fundamental Theorem of Calculus.md",
+    "AP Calculus Notes/4.5 Integration by Substitution.md",
+    "AP Calculus Notes/5.1 Differentiating Natural Logs.md",
+    "AP Calculus Notes/5.2 Natural Log Integration.md",
+    "AP Calculus Notes/5.3 Inverse Functions.md",
+    "AP Calculus Notes/5.4 Deriving Exponential Functions.md",
+    "AP Calculus Notes/5.5 Deriving Bases Other Than e & Applications.md",
+    "AP Calculus Notes/5.6 Indeterminate Formulas and L'Hopital's Rule.md",
+    "AP Calculus Notes/5.7 Inverse Trigonometric Functions; Differentiation.md",
+    "AP Calculus Notes/5.8 Inverse Trigonomteric Functions; Integration.md",
+    "AP Calculus Notes/5.9 Hyperbolic Functions.md",
+    "AP Calculus Notes/6.1 Slope Fields.md",
+    "AP Calculus Notes/6.3 Separation of Variables.md",
+    "AP Calculus Notes/7.1 Area in Between 2 Curves.md",
+    "AP Calculus Notes/7.2 Volume; The Disk Method.md",
+    "AP Calculus Notes/AP Calculus AB.md",
+    "AP Calculus Notes/Chain Rule.md",
+    "AP Calculus Notes/Common Calculus Notations.md",
+    "AP Calculus Notes/Continuity.md",
+    "AP Calculus Notes/Derivative as a Limit.md",
+    "AP Calculus Notes/Derivative Rules.md",
+    "AP Calculus Notes/Differentiating Related Functions.md",
+    "AP Calculus Notes/Discontinuities.md",
+    "AP Calculus Notes/Finding Maximum or Minimum of a Quadratic.md",
+    "AP Calculus Notes/How to Find u (calculus).md",
+    "AP Calculus Notes/Integration Rules.md",
+    "AP Calculus Notes/Intermediate Value Theorem (IVT).md",
+    "AP Calculus Notes/Optimization Problems.md",
+    "AP Calculus Notes/Riemann Sums.md",
+    "AP Calculus Notes/Secant Lines (with Arbitrary Difference).md",
+    "AP Calculus Notes/Spring Break Assignment Submission.md",
+    "AP Calculus Notes/Trigonometric Chart Memorization.md",
+    "AP Calculus Notes/Trigonometric Identities.md",
+    "AP Physics 1/01 Vectors and Scalars.md",
+    "AP Physics 1/02 Acceleration.md",
+    "AP Physics 1/04 Projectile Motion.md",
+    "AP Physics 1/05 Free Body Diagrams.md",
+    "AP Physics 1/06 Diagonal Forces.md",
+    "AP Physics 1/07 Inclined Planes.md",
+    "AP Physics 1/08 Atwood Machine.md",
+    "AP Physics 1/09 Newton's Laws.md",
+    "AP Physics 1/10 Uniform Centripetal Force.md",
+    "AP Physics 1/11 Work in Physics.md",
+    "AP Physics 1/12 Energy in Physics.md",
+    "AP Physics 1/13 Conservative and Non-conservative Forces.md",
+    "AP Physics 1/14 Power in Physics.md",
+    "AP Physics 1/15 Simple Harmonic Motion.md",
+    "AP Physics 1/16 Momentum in Physics.md",
+    "AP Physics 1/17 Collisions in Physics.md",
+    "AP Physics 1/18 Rotational Kinematics.md",
+    "AP Physics 1/19 Torque in Physics.md",
+    "AP Physics 1/20 Angular Momentum and Rotational Inertia.md",
+    "AP Physics 1/AP Physics.md",
+    "AP Physics 1/AP Physics Review.md",
+    "AP Physics 1/Curvature.md",
+    "AP Physics 1/Jerk in Physics.md",
+    "AP Physics 1/03 Linear Kinematics.md",
+    "AP Physics 1/Systems in Physics.md",
+    "COP 2220 - Introduction to C++/01 Intro to Computers and Programming - COP 2220.md",
+    "COP 2220 - Introduction to C++/02 Intro to C++ - COP 2220.md",
+    "COP 2220 - Introduction to C++/03 Expressions and Interactivity - COP 2220.md",
+    "COP 2220 - Introduction to C++/04 Making Decisions - COP 2220.md",
+    "COP 2220 - Introduction to C++/05 Loops - COP 2220.md",
+    "COP 2220 - Introduction to C++/06 Functions - COP 2220.md",
+    "COP 2220 - Introduction to C++/07 Arrays and Vectors - COP 2220.md",
+    "COP 2220 - Introduction to C++/08 Searching and Sorting Arrays - COP 2220.md",
+    "COP 2220 - Introduction to C++/09 Pointers - COP 2220.md",
+    "COP 2220 - Introduction to C++/09 Pointers - COP 2220.sync-conflict-20240214-085341-VKELSIK.md",
+    "COP 2220 - Introduction to C++/09 Pointers - COP 2220.sync-conflict-20240214-085431-VKELSIK.md",
+    "COP 2220 - Introduction to C++/10 Characters and Strings - C++.md",
+    "COP 2220 - Introduction to C++/COP 2220 - Introduction to C++.md",
+    "MAC 2312 - Calculus 2/07 Application of Integrals - MAC 2312.md",
+    "MAC 2312 - Calculus 2/08 Integration Techniques and Improper Integrals - MAC 2312.md",
+    "MAC 2312 - Calculus 2/09 Infinite Series - MAC 2312.md",
+    "MAC 2312 - Calculus 2/MAC 2312 - Calculus 2 with Analytic Geometry.md",
+    "PHY 2048 - Physics 1/01 Measurements - PHY 2048.md",
+    "PHY 2048 - Physics 1/02 1D Kinematics - PHY 2048.md",
+    "PHY 2048 - Physics 1/03 2D and 3D Kinematics - PHY 2048.md",
+    "PHY 2048 - Physics 1/04 Newton's Laws, Atwood Machines, and Inclined Planes - PHY 2048.md",
+    "PHY 2048 - Physics 1/05 Circular Motion and Drag - PHY 2048.md",
+    "PHY 2048 - Physics 1/06 Gravitation - PHY 2048.md",
+    "PHY 2048 - Physics 1/07 Work and Energy - PHY 2048.md",
+    "PHY 2048 - Physics 1/08 Conservation of Energy - PHY 2048.md",
+    "PHY 2048 - Physics 1/09 Linear Momentum - PHY 2048.md",
+    "PHY 2048 - Physics 1/PHY 2048 - Physics 1 with Calculus.md",
+    "STA 2023 Statistics/01 Introduction to Statistics - STA 2023.md",
+    "STA 2023 Statistics/02 Visualizing Data - STA 2023.md",
+    "STA 2023 Statistics/03 Data Exploration - STA 2023.md",
+    "STA 2023 Statistics/04 Probability - STA 2023.md",
+    "STA 2023 Statistics/05 Discrete Probability Distributions - STA 2023.md",
+    "STA 2023 Statistics/06 Normal Distribution - STA 2023.md",
+    "STA 2023 Statistics/07 Estimating Parameters - STA 2023.md",
+    "STA 2023 Statistics/07 Estimating Parameters - STA 2023.sync-conflict-20231206-210008-VKELSIK.md",
+    "STA 2023 Statistics/08 Hypothesis Testing - STA 2023.md",
+    "STA 2023 Statistics/10 Correlation - STA 2023.md",
+    "STA 2023 Statistics/10 Scatterplots - STA 2023.md",
+    "STA 2023 Statistics/11 Chi Square Tests - STA 2023.md",
+    "STA 2023 Statistics/STA 2023 - Elementary Statistics.md",
+    "Computer Science.md",
+    "index.md",
+    "lib/scripts/graph-wasm.wasm",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/fonts/mathjax_zero.woff",
+    "lib/fonts/mathjax_main-regular.woff",
+    "lib/fonts/mathjax_main-bold.woff",
+    "lib/fonts/mathjax_math-italic.woff",
+    "lib/fonts/mathjax_main-italic.woff",
+    "lib/fonts/mathjax_math-bolditalic.woff",
+    "lib/fonts/mathjax_size1-regular.woff",
+    "lib/fonts/mathjax_size2-regular.woff",
+    "lib/fonts/mathjax_size3-regular.woff",
+    "lib/fonts/mathjax_size4-regular.woff",
+    "lib/fonts/mathjax_ams-regular.woff",
+    "lib/fonts/mathjax_calligraphic-regular.woff",
+    "lib/fonts/mathjax_calligraphic-bold.woff",
+    "lib/fonts/mathjax_fraktur-regular.woff",
+    "lib/fonts/mathjax_fraktur-bold.woff",
+    "lib/fonts/mathjax_sansserif-regular.woff",
+    "lib/fonts/mathjax_sansserif-bold.woff",
+    "lib/fonts/mathjax_sansserif-italic.woff",
+    "lib/fonts/mathjax_script-regular.woff",
+    "lib/fonts/mathjax_typewriter-regular.woff",
+    "lib/fonts/mathjax_vector-regular.woff",
+    "lib/fonts/mathjax_vector-bold.woff",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/theme.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/supported-plugins.css",
+    "lib/styles/main-styles.css"
+  ],
+  "mainDependencies": [
+    "lib/scripts/graph-wasm.wasm",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/fonts/mathjax_zero.woff",
+    "lib/fonts/mathjax_main-regular.woff",
+    "lib/fonts/mathjax_main-bold.woff",
+    "lib/fonts/mathjax_math-italic.woff",
+    "lib/fonts/mathjax_main-italic.woff",
+    "lib/fonts/mathjax_math-bolditalic.woff",
+    "lib/fonts/mathjax_size1-regular.woff",
+    "lib/fonts/mathjax_size2-regular.woff",
+    "lib/fonts/mathjax_size3-regular.woff",
+    "lib/fonts/mathjax_size4-regular.woff",
+    "lib/fonts/mathjax_ams-regular.woff",
+    "lib/fonts/mathjax_calligraphic-regular.woff",
+    "lib/fonts/mathjax_calligraphic-bold.woff",
+    "lib/fonts/mathjax_fraktur-regular.woff",
+    "lib/fonts/mathjax_fraktur-bold.woff",
+    "lib/fonts/mathjax_sansserif-regular.woff",
+    "lib/fonts/mathjax_sansserif-bold.woff",
+    "lib/fonts/mathjax_sansserif-italic.woff",
+    "lib/fonts/mathjax_script-regular.woff",
+    "lib/fonts/mathjax_typewriter-regular.woff",
+    "lib/fonts/mathjax_vector-regular.woff",
+    "lib/fonts/mathjax_vector-bold.woff",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/theme.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/supported-plugins.css",
+    "lib/styles/main-styles.css"
+  ],
+  "fileInfo": {
+    "lib/scripts/graph-wasm.wasm": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 23377,
+      "exportedPath": "lib/scripts/graph-wasm.wasm",
+      "dependencies": []
+    },
+    "lib/fonts/94f2f163d4b698242fef.otf": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 66800,
+      "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
+      "dependencies": []
+    },
+    "lib/fonts/72505e6a122c6acd5471.woff2": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 104232,
+      "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/2d5198822ab091ce4305.woff2": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 104332,
+      "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 98868,
+      "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cb10ffd7684cd9836a05.woff2": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 106876,
+      "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/b5f0f109bc88052d4000.woff2": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 105804,
+      "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cbe0ae49c52c920fd563.woff2": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 106108,
+      "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/535a6cf662596b3bd6a6.woff2": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 111708,
+      "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/70cc7ff27245e82ad414.ttf": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 192740,
+      "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/454577c22304619db035.ttf": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 161376,
+      "exportedPath": "lib/fonts/454577c22304619db035.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/52ac8f3034507f1d9e53.ttf": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 191568,
+      "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/05b618077343fbbd92b7.ttf": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 155288,
+      "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 7876,
+      "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+      "dependencies": []
+    },
+    "lib/media/874d8b8e340f75575caa.svg": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 317,
+      "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_zero.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1368,
+      "exportedPath": "lib/fonts/mathjax_zero.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-regular.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 34160,
+      "exportedPath": "lib/fonts/mathjax_main-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-bold.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 34464,
+      "exportedPath": "lib/fonts/mathjax_main-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_math-italic.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 19360,
+      "exportedPath": "lib/fonts/mathjax_math-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_main-italic.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 20832,
+      "exportedPath": "lib/fonts/mathjax_main-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_math-bolditalic.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 19776,
+      "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size1-regular.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 5792,
+      "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size2-regular.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 5464,
+      "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size3-regular.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 3244,
+      "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_size4-regular.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 5148,
+      "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_ams-regular.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 40808,
+      "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_calligraphic-regular.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 9600,
+      "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_calligraphic-bold.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 9908,
+      "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_fraktur-regular.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 21480,
+      "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_fraktur-bold.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 22340,
+      "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-regular.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 12660,
+      "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-bold.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 15944,
+      "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_sansserif-italic.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 14628,
+      "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_script-regular.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 11852,
+      "exportedPath": "lib/fonts/mathjax_script-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_typewriter-regular.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 17604,
+      "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_vector-regular.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1136,
+      "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
+      "dependencies": []
+    },
+    "lib/fonts/mathjax_vector-bold.woff": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1116,
+      "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
+      "dependencies": []
+    },
+    "lib/html/file-tree.html": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 89802,
+      "exportedPath": "lib/html/file-tree.html",
+      "dependencies": []
+    },
+    "lib/scripts/webpage.js": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 47290,
+      "exportedPath": "lib/scripts/webpage.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-view.js": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 15519,
+      "exportedPath": "lib/scripts/graph-view.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.js": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 14021,
+      "exportedPath": "lib/scripts/graph-wasm.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-render-worker.js": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 5179,
+      "exportedPath": "lib/scripts/graph-render-worker.js",
+      "dependencies": []
+    },
+    "lib/scripts/tinycolor.js": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 29832,
+      "exportedPath": "lib/scripts/tinycolor.js",
+      "dependencies": []
+    },
+    "lib/scripts/pixi.js": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 449509,
+      "exportedPath": "lib/scripts/pixi.js",
+      "dependencies": []
+    },
+    "lib/scripts/minisearch.js": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 29422,
+      "exportedPath": "lib/scripts/minisearch.js",
+      "dependencies": []
+    },
+    "lib/media/favicon.png": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1105,
+      "exportedPath": "lib/media/favicon.png",
+      "dependencies": []
+    },
+    "lib/scripts/graph-data.js": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 11923,
+      "exportedPath": "lib/scripts/graph-data.js",
+      "dependencies": []
+    },
+    "lib/styles/obsidian.css": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 157722,
+      "exportedPath": "lib/styles/obsidian.css",
+      "dependencies": []
+    },
+    "lib/styles/theme.css": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 41426,
+      "exportedPath": "lib/styles/theme.css",
+      "dependencies": []
+    },
+    "lib/styles/global-variable-styles.css": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 445,
+      "exportedPath": "lib/styles/global-variable-styles.css",
+      "dependencies": []
+    },
+    "lib/styles/main-styles.css": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 23130,
+      "exportedPath": "lib/styles/main-styles.css",
+      "dependencies": []
+    },
+    "lib/styles/supported-plugins.css": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 49,
+      "exportedPath": "lib/styles/supported-plugins.css",
+      "dependencies": []
+    },
+    "AP Calculus Notes/01 Limits - AP Calculus AB.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 5446,
+      "exportedPath": "ap-calculus-notes/01-limits-ap-calculus-ab.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/02 Derivatives - AP Calculus AB.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 6065,
+      "exportedPath": "ap-calculus-notes/02-derivatives-ap-calculus-ab.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/3.1 Extrema on an Interval.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1392,
+      "exportedPath": "ap-calculus-notes/3.1-extrema-on-an-interval.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/3.2 Rolle's Theorem and Mean Value Theorem.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2220,
+      "exportedPath": "ap-calculus-notes/3.2-rolle's-theorem-and-mean-value-theorem.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/3.3 The First Derivative Test and Increasing and Decreasing Functions.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2102,
+      "exportedPath": "ap-calculus-notes/3.3-the-first-derivative-test-and-increasing-and-decreasing-functions.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/3.4 The Second Derivative Test and Concavity.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2819,
+      "exportedPath": "ap-calculus-notes/3.4-the-second-derivative-test-and-concavity.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/3.6 Curve Sketching.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 397,
+      "exportedPath": "ap-calculus-notes/3.6-curve-sketching.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/04 Integration  - AP Calculus AB.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 9413,
+      "exportedPath": "ap-calculus-notes/04-integration-ap-calculus-ab.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/4.1 Integrals.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 220,
+      "exportedPath": "ap-calculus-notes/4.1-integrals.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/4.3 Riemann Sums and Definite Integrals.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 4282,
+      "exportedPath": "ap-calculus-notes/4.3-riemann-sums-and-definite-integrals.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/4.4 Fundamental Theorem of Calculus.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2444,
+      "exportedPath": "ap-calculus-notes/4.4-fundamental-theorem-of-calculus.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/4.5 Integration by Substitution.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2751,
+      "exportedPath": "ap-calculus-notes/4.5-integration-by-substitution.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/5.1 Differentiating Natural Logs.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 609,
+      "exportedPath": "ap-calculus-notes/5.1-differentiating-natural-logs.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/5.2 Natural Log Integration.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 214,
+      "exportedPath": "ap-calculus-notes/5.2-natural-log-integration.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/5.3 Inverse Functions.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 661,
+      "exportedPath": "ap-calculus-notes/5.3-inverse-functions.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/5.4 Deriving Exponential Functions.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 133,
+      "exportedPath": "ap-calculus-notes/5.4-deriving-exponential-functions.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/5.5 Deriving Bases Other Than e & Applications.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 163,
+      "exportedPath": "ap-calculus-notes/5.5-deriving-bases-other-than-e-&-applications.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/5.6 Indeterminate Formulas and L'Hopital's Rule.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 885,
+      "exportedPath": "ap-calculus-notes/5.6-indeterminate-formulas-and-l'hopital's-rule.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/5.7 Inverse Trigonometric Functions; Differentiation.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 625,
+      "exportedPath": "ap-calculus-notes/5.7-inverse-trigonometric-functions;-differentiation.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/5.8 Inverse Trigonomteric Functions; Integration.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 527,
+      "exportedPath": "ap-calculus-notes/5.8-inverse-trigonomteric-functions;-integration.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/5.9 Hyperbolic Functions.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 504,
+      "exportedPath": "ap-calculus-notes/5.9-hyperbolic-functions.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/6.1 Slope Fields.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 850,
+      "exportedPath": "ap-calculus-notes/6.1-slope-fields.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/6.3 Separation of Variables.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 769,
+      "exportedPath": "ap-calculus-notes/6.3-separation-of-variables.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/7.1 Area in Between 2 Curves.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2238,
+      "exportedPath": "ap-calculus-notes/7.1-area-in-between-2-curves.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/7.2 Volume; The Disk Method.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2773,
+      "exportedPath": "ap-calculus-notes/7.2-volume;-the-disk-method.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/AP Calculus AB.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 495,
+      "exportedPath": "ap-calculus-notes/ap-calculus-ab.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Chain Rule.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 78,
+      "exportedPath": "ap-calculus-notes/chain-rule.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Common Calculus Notations.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 198,
+      "exportedPath": "ap-calculus-notes/common-calculus-notations.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Continuity.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 707,
+      "exportedPath": "ap-calculus-notes/continuity.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Derivative as a Limit.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2572,
+      "exportedPath": "ap-calculus-notes/derivative-as-a-limit.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Derivative Rules.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 12456,
+      "exportedPath": "ap-calculus-notes/derivative-rules.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Differentiating Related Functions.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 3359,
+      "exportedPath": "ap-calculus-notes/differentiating-related-functions.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Discontinuities.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 575,
+      "exportedPath": "ap-calculus-notes/discontinuities.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Finding Maximum or Minimum of a Quadratic.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 800,
+      "exportedPath": "ap-calculus-notes/finding-maximum-or-minimum-of-a-quadratic.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/How to Find u (calculus).md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 4458,
+      "exportedPath": "ap-calculus-notes/how-to-find-u-(calculus).html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Integration Rules.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 4770,
+      "exportedPath": "ap-calculus-notes/integration-rules.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Intermediate Value Theorem (IVT).md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1005,
+      "exportedPath": "ap-calculus-notes/intermediate-value-theorem-(ivt).html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Optimization Problems.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 7139,
+      "exportedPath": "ap-calculus-notes/optimization-problems.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Riemann Sums.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2185,
+      "exportedPath": "ap-calculus-notes/riemann-sums.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Secant Lines (with Arbitrary Difference).md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1302,
+      "exportedPath": "ap-calculus-notes/secant-lines-(with-arbitrary-difference).html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Spring Break Assignment Submission.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 953,
+      "exportedPath": "ap-calculus-notes/spring-break-assignment-submission.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Trigonometric Chart Memorization.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1130,
+      "exportedPath": "ap-calculus-notes/trigonometric-chart-memorization.html",
+      "dependencies": []
+    },
+    "AP Calculus Notes/Trigonometric Identities.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 5706,
+      "exportedPath": "ap-calculus-notes/trigonometric-identities.html",
+      "dependencies": []
+    },
+    "AP Physics 1/01 Vectors and Scalars.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1832,
+      "exportedPath": "ap-physics-1/01-vectors-and-scalars.html",
+      "dependencies": []
+    },
+    "AP Physics 1/02 Acceleration.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 589,
+      "exportedPath": "ap-physics-1/02-acceleration.html",
+      "dependencies": []
+    },
+    "AP Physics 1/04 Projectile Motion.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2848,
+      "exportedPath": "ap-physics-1/04-projectile-motion.html",
+      "dependencies": []
+    },
+    "AP Physics 1/05 Free Body Diagrams.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1957,
+      "exportedPath": "ap-physics-1/05-free-body-diagrams.html",
+      "dependencies": []
+    },
+    "AP Physics 1/06 Diagonal Forces.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1509,
+      "exportedPath": "ap-physics-1/06-diagonal-forces.html",
+      "dependencies": []
+    },
+    "AP Physics 1/07 Inclined Planes.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 571,
+      "exportedPath": "ap-physics-1/07-inclined-planes.html",
+      "dependencies": []
+    },
+    "AP Physics 1/08 Atwood Machine.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 3803,
+      "exportedPath": "ap-physics-1/08-atwood-machine.html",
+      "dependencies": []
+    },
+    "AP Physics 1/09 Newton's Laws.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 766,
+      "exportedPath": "ap-physics-1/09-newton's-laws.html",
+      "dependencies": []
+    },
+    "AP Physics 1/10 Uniform Centripetal Force.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 4696,
+      "exportedPath": "ap-physics-1/10-uniform-centripetal-force.html",
+      "dependencies": []
+    },
+    "AP Physics 1/11 Work in Physics.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1325,
+      "exportedPath": "ap-physics-1/11-work-in-physics.html",
+      "dependencies": []
+    },
+    "AP Physics 1/12 Energy in Physics.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 3295,
+      "exportedPath": "ap-physics-1/12-energy-in-physics.html",
+      "dependencies": []
+    },
+    "AP Physics 1/13 Conservative and Non-conservative Forces.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1392,
+      "exportedPath": "ap-physics-1/13-conservative-and-non-conservative-forces.html",
+      "dependencies": []
+    },
+    "AP Physics 1/14 Power in Physics.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 438,
+      "exportedPath": "ap-physics-1/14-power-in-physics.html",
+      "dependencies": []
+    },
+    "AP Physics 1/15 Simple Harmonic Motion.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1550,
+      "exportedPath": "ap-physics-1/15-simple-harmonic-motion.html",
+      "dependencies": []
+    },
+    "AP Physics 1/16 Momentum in Physics.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1833,
+      "exportedPath": "ap-physics-1/16-momentum-in-physics.html",
+      "dependencies": []
+    },
+    "AP Physics 1/17 Collisions in Physics.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2462,
+      "exportedPath": "ap-physics-1/17-collisions-in-physics.html",
+      "dependencies": []
+    },
+    "AP Physics 1/18 Rotational Kinematics.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 3551,
+      "exportedPath": "ap-physics-1/18-rotational-kinematics.html",
+      "dependencies": []
+    },
+    "AP Physics 1/19 Torque in Physics.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1472,
+      "exportedPath": "ap-physics-1/19-torque-in-physics.html",
+      "dependencies": []
+    },
+    "AP Physics 1/20 Angular Momentum and Rotational Inertia.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 3244,
+      "exportedPath": "ap-physics-1/20-angular-momentum-and-rotational-inertia.html",
+      "dependencies": []
+    },
+    "AP Physics 1/AP Physics.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1611,
+      "exportedPath": "ap-physics-1/ap-physics.html",
+      "dependencies": []
+    },
+    "AP Physics 1/AP Physics Review.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1990,
+      "exportedPath": "ap-physics-1/ap-physics-review.html",
+      "dependencies": []
+    },
+    "AP Physics 1/Curvature.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1242,
+      "exportedPath": "ap-physics-1/curvature.html",
+      "dependencies": []
+    },
+    "AP Physics 1/Jerk in Physics.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 411,
+      "exportedPath": "ap-physics-1/jerk-in-physics.html",
+      "dependencies": []
+    },
+    "AP Physics 1/03 Linear Kinematics.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2751,
+      "exportedPath": "ap-physics-1/03-linear-kinematics.html",
+      "dependencies": []
+    },
+    "AP Physics 1/Systems in Physics.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 387,
+      "exportedPath": "ap-physics-1/systems-in-physics.html",
+      "dependencies": []
+    },
+    "COP 2220 - Introduction to C++/01 Intro to Computers and Programming - COP 2220.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2425,
+      "exportedPath": "cop-2220-introduction-to-c++/01-intro-to-computers-and-programming-cop-2220.html",
+      "dependencies": []
+    },
+    "COP 2220 - Introduction to C++/02 Intro to C++ - COP 2220.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 8431,
+      "exportedPath": "cop-2220-introduction-to-c++/02-intro-to-c++-cop-2220.html",
+      "dependencies": []
+    },
+    "COP 2220 - Introduction to C++/03 Expressions and Interactivity - COP 2220.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 8270,
+      "exportedPath": "cop-2220-introduction-to-c++/03-expressions-and-interactivity-cop-2220.html",
+      "dependencies": []
+    },
+    "COP 2220 - Introduction to C++/04 Making Decisions - COP 2220.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 3512,
+      "exportedPath": "cop-2220-introduction-to-c++/04-making-decisions-cop-2220.html",
+      "dependencies": []
+    },
+    "COP 2220 - Introduction to C++/05 Loops - COP 2220.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 3983,
+      "exportedPath": "cop-2220-introduction-to-c++/05-loops-cop-2220.html",
+      "dependencies": []
+    },
+    "COP 2220 - Introduction to C++/06 Functions - COP 2220.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 12207,
+      "exportedPath": "cop-2220-introduction-to-c++/06-functions-cop-2220.html",
+      "dependencies": []
+    },
+    "COP 2220 - Introduction to C++/07 Arrays and Vectors - COP 2220.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 8517,
+      "exportedPath": "cop-2220-introduction-to-c++/07-arrays-and-vectors-cop-2220.html",
+      "dependencies": []
+    },
+    "COP 2220 - Introduction to C++/08 Searching and Sorting Arrays - COP 2220.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 6338,
+      "exportedPath": "cop-2220-introduction-to-c++/08-searching-and-sorting-arrays-cop-2220.html",
+      "dependencies": []
+    },
+    "COP 2220 - Introduction to C++/09 Pointers - COP 2220.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 4989,
+      "exportedPath": "cop-2220-introduction-to-c++/09-pointers-cop-2220.html",
+      "dependencies": []
+    },
+    "COP 2220 - Introduction to C++/09 Pointers - COP 2220.sync-conflict-20240214-085341-VKELSIK.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1091,
+      "exportedPath": "cop-2220-introduction-to-c++/09-pointers-cop-2220.sync-conflict-20240214-085341-vkelsik.html",
+      "dependencies": []
+    },
+    "COP 2220 - Introduction to C++/09 Pointers - COP 2220.sync-conflict-20240214-085431-VKELSIK.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1226,
+      "exportedPath": "cop-2220-introduction-to-c++/09-pointers-cop-2220.sync-conflict-20240214-085431-vkelsik.html",
+      "dependencies": []
+    },
+    "COP 2220 - Introduction to C++/10 Characters and Strings - C++.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1244,
+      "exportedPath": "cop-2220-introduction-to-c++/10-characters-and-strings-c++.html",
+      "dependencies": []
+    },
+    "COP 2220 - Introduction to C++/COP 2220 - Introduction to C++.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 616,
+      "exportedPath": "cop-2220-introduction-to-c++/cop-2220-introduction-to-c++.html",
+      "dependencies": []
+    },
+    "MAC 2312 - Calculus 2/07 Application of Integrals - MAC 2312.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 26533,
+      "exportedPath": "mac-2312-calculus-2/07-application-of-integrals-mac-2312.html",
+      "dependencies": []
+    },
+    "MAC 2312 - Calculus 2/08 Integration Techniques and Improper Integrals - MAC 2312.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 17933,
+      "exportedPath": "mac-2312-calculus-2/08-integration-techniques-and-improper-integrals-mac-2312.html",
+      "dependencies": []
+    },
+    "MAC 2312 - Calculus 2/09 Infinite Series - MAC 2312.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 27687,
+      "exportedPath": "mac-2312-calculus-2/09-infinite-series-mac-2312.html",
+      "dependencies": []
+    },
+    "MAC 2312 - Calculus 2/MAC 2312 - Calculus 2 with Analytic Geometry.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 635,
+      "exportedPath": "mac-2312-calculus-2/mac-2312-calculus-2-with-analytic-geometry.html",
+      "dependencies": []
+    },
+    "PHY 2048 - Physics 1/01 Measurements - PHY 2048.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2284,
+      "exportedPath": "phy-2048-physics-1/01-measurements-phy-2048.html",
+      "dependencies": []
+    },
+    "PHY 2048 - Physics 1/02 1D Kinematics - PHY 2048.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 3161,
+      "exportedPath": "phy-2048-physics-1/02-1d-kinematics-phy-2048.html",
+      "dependencies": []
+    },
+    "PHY 2048 - Physics 1/03 2D and 3D Kinematics - PHY 2048.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 3274,
+      "exportedPath": "phy-2048-physics-1/03-2d-and-3d-kinematics-phy-2048.html",
+      "dependencies": []
+    },
+    "PHY 2048 - Physics 1/04 Newton's Laws, Atwood Machines, and Inclined Planes - PHY 2048.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 4581,
+      "exportedPath": "phy-2048-physics-1/04-newton's-laws,-atwood-machines,-and-inclined-planes-phy-2048.html",
+      "dependencies": []
+    },
+    "PHY 2048 - Physics 1/05 Circular Motion and Drag - PHY 2048.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 4050,
+      "exportedPath": "phy-2048-physics-1/05-circular-motion-and-drag-phy-2048.html",
+      "dependencies": []
+    },
+    "PHY 2048 - Physics 1/06 Gravitation - PHY 2048.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 2770,
+      "exportedPath": "phy-2048-physics-1/06-gravitation-phy-2048.html",
+      "dependencies": []
+    },
+    "PHY 2048 - Physics 1/07 Work and Energy - PHY 2048.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 3486,
+      "exportedPath": "phy-2048-physics-1/07-work-and-energy-phy-2048.html",
+      "dependencies": []
+    },
+    "PHY 2048 - Physics 1/08 Conservation of Energy - PHY 2048.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 4967,
+      "exportedPath": "phy-2048-physics-1/08-conservation-of-energy-phy-2048.html",
+      "dependencies": []
+    },
+    "PHY 2048 - Physics 1/09 Linear Momentum - PHY 2048.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 3354,
+      "exportedPath": "phy-2048-physics-1/09-linear-momentum-phy-2048.html",
+      "dependencies": []
+    },
+    "PHY 2048 - Physics 1/PHY 2048 - Physics 1 with Calculus.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 838,
+      "exportedPath": "phy-2048-physics-1/phy-2048-physics-1-with-calculus.html",
+      "dependencies": []
+    },
+    "STA 2023 Statistics/01 Introduction to Statistics - STA 2023.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 5743,
+      "exportedPath": "sta-2023-statistics/01-introduction-to-statistics-sta-2023.html",
+      "dependencies": []
+    },
+    "STA 2023 Statistics/02 Visualizing Data - STA 2023.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 5821,
+      "exportedPath": "sta-2023-statistics/02-visualizing-data-sta-2023.html",
+      "dependencies": []
+    },
+    "STA 2023 Statistics/03 Data Exploration - STA 2023.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 3280,
+      "exportedPath": "sta-2023-statistics/03-data-exploration-sta-2023.html",
+      "dependencies": []
+    },
+    "STA 2023 Statistics/04 Probability - STA 2023.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 6036,
+      "exportedPath": "sta-2023-statistics/04-probability-sta-2023.html",
+      "dependencies": []
+    },
+    "STA 2023 Statistics/05 Discrete Probability Distributions - STA 2023.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 4720,
+      "exportedPath": "sta-2023-statistics/05-discrete-probability-distributions-sta-2023.html",
+      "dependencies": []
+    },
+    "STA 2023 Statistics/06 Normal Distribution - STA 2023.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 7238,
+      "exportedPath": "sta-2023-statistics/06-normal-distribution-sta-2023.html",
+      "dependencies": []
+    },
+    "STA 2023 Statistics/07 Estimating Parameters - STA 2023.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 6859,
+      "exportedPath": "sta-2023-statistics/07-estimating-parameters-sta-2023.html",
+      "dependencies": []
+    },
+    "STA 2023 Statistics/07 Estimating Parameters - STA 2023.sync-conflict-20231206-210008-VKELSIK.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 5502,
+      "exportedPath": "sta-2023-statistics/07-estimating-parameters-sta-2023.sync-conflict-20231206-210008-vkelsik.html",
+      "dependencies": []
+    },
+    "STA 2023 Statistics/08 Hypothesis Testing - STA 2023.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 11650,
+      "exportedPath": "sta-2023-statistics/08-hypothesis-testing-sta-2023.html",
+      "dependencies": []
+    },
+    "STA 2023 Statistics/10 Correlation - STA 2023.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 4960,
+      "exportedPath": "sta-2023-statistics/10-correlation-sta-2023.html",
+      "dependencies": []
+    },
+    "STA 2023 Statistics/10 Scatterplots - STA 2023.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 3662,
+      "exportedPath": "sta-2023-statistics/10-scatterplots-sta-2023.html",
+      "dependencies": []
+    },
+    "STA 2023 Statistics/11 Chi Square Tests - STA 2023.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 4139,
+      "exportedPath": "sta-2023-statistics/11-chi-square-tests-sta-2023.html",
+      "dependencies": []
+    },
+    "STA 2023 Statistics/STA 2023 - Elementary Statistics.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1134,
+      "exportedPath": "sta-2023-statistics/sta-2023-elementary-statistics.html",
+      "dependencies": []
+    },
+    "Computer Science.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1269,
+      "exportedPath": "computer-science.html",
+      "dependencies": []
+    },
+    "index.md": {
+      "modifiedTime": 1712607416272,
+      "sourceSize": 1269,
+      "exportedPath": "index.html",
+      "dependencies": []
+    }
+  }
+}
