@@ -1,6 +1,6 @@
 {
   "vaultName": "Public Notes",
-  "lastExport": 1717283274568,
+  "lastExport": 1717609224340,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager show-inline-title code-styler code-styler-style-inline code-styler-gutter-highlight theme-light",
   "useCustomHeadContent": false,
@@ -96,9 +96,12 @@
     "PHY 2049 - Physics 2/PHY 2049 - Physics 2 with Calculus.md",
     "Public Media/Battery Circuit.png",
     "Public Media/Capacitor Symbol.png",
+    "Public Media/Capacitors in a Series.png",
     "Public Media/Dielectric.png",
     "Public Media/Electric Field Lines.png",
     "Public Media/Equipotential Lines.png",
+    "Public Media/Parallel Capacitors.png",
+    "Public Media/Pasted image 20240604103533.png",
     "Public Media/Resistor Symbol - International.png",
     "Public Media/Resistor Symbol - United States.png",
     "Public Media/Vector Projection.svg",
@@ -119,6 +122,15 @@
     "Contact.md",
     "index.md",
     "Writing Standards.md",
+    "lib/media/vector-projection.svg",
+    "lib/media/equipotential-lines.png",
+    "lib/media/capacitor-symbol.png",
+    "lib/media/parallel-capacitors.png",
+    "lib/media/capacitors-in-a-series.png",
+    "lib/media/dielectric.png",
+    "lib/media/battery-circuit.png",
+    "lib/media/resistor-symbol-united-states.png",
+    "lib/media/resistor-symbol-international.png",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
@@ -171,14 +183,8 @@
     "lib/styles/theme.css",
     "lib/styles/global-variable-styles.css",
     "lib/styles/main-styles.css",
-    "lib/media/vector-projection.svg",
-    "lib/media/electric-field-lines.png",
-    "lib/media/equipotential-lines.png",
-    "lib/media/capacitor-symbol.png",
-    "lib/media/dielectric.png",
-    "lib/media/battery-circuit.png",
-    "lib/media/resistor-symbol-united-states.png",
-    "lib/media/resistor-symbol-international.png"
+    "lib/styles/snippets.css",
+    "lib/media/electric-field-lines.png"
   ],
   "mainDependencies": [
     "lib/scripts/graph-wasm.wasm",
@@ -232,7 +238,8 @@
     "lib/styles/other-plugins.css",
     "lib/styles/theme.css",
     "lib/styles/global-variable-styles.css",
-    "lib/styles/main-styles.css"
+    "lib/styles/main-styles.css",
+    "lib/styles/snippets.css"
   ],
   "fileInfo": {
     "AP Calculus Notes/01 Limits - AP Calculus AB.md": {
@@ -518,14 +525,14 @@
       "dependencies": []
     },
     "COP 2220 - Introduction to C++/02 Intro to C++ - COP 2220.md": {
-      "modifiedTime": 1717280806671,
-      "sourceSize": 8431,
+      "modifiedTime": 1717609224340,
+      "sourceSize": 8716,
       "exportedPath": "cop-2220-introduction-to-c++/02-intro-to-c++-cop-2220.html",
       "dependencies": []
     },
     "COP 2220 - Introduction to C++/03 Expressions and Interactivity - COP 2220.md": {
-      "modifiedTime": 1717280806671,
-      "sourceSize": 8270,
+      "modifiedTime": 1717609224340,
+      "sourceSize": 8295,
       "exportedPath": "cop-2220-introduction-to-c++/03-expressions-and-interactivity-cop-2220.html",
       "dependencies": []
     },
@@ -536,8 +543,8 @@
       "dependencies": []
     },
     "COP 2220 - Introduction to C++/05 Loops - COP 2220.md": {
-      "modifiedTime": 1717280806671,
-      "sourceSize": 3983,
+      "modifiedTime": 1717609224340,
+      "sourceSize": 4066,
       "exportedPath": "cop-2220-introduction-to-c++/05-loops-cop-2220.html",
       "dependencies": []
     },
@@ -608,16 +615,16 @@
       "dependencies": []
     },
     "MAC 2313 - Calculus 3/12 Vectors and the Geometry of Space - MAC 2313.md": {
-      "modifiedTime": 1717280806671,
-      "sourceSize": 9486,
+      "modifiedTime": 1717609224340,
+      "sourceSize": 9558,
       "exportedPath": "mac-2313-calculus-3/12-vectors-and-the-geometry-of-space-mac-2313.html",
       "dependencies": [
         "lib/media/vector-projection.svg"
       ]
     },
     "MAC 2313 - Calculus 3/13 Vector-Valued Functions and Motion in Space - MAC 2313.md": {
-      "modifiedTime": 1717280806671,
-      "sourceSize": 694,
+      "modifiedTime": 1717609224340,
+      "sourceSize": 3408,
       "exportedPath": "mac-2313-calculus-3/13-vector-valued-functions-and-motion-in-space-mac-2313.html",
       "dependencies": []
     },
@@ -738,31 +745,33 @@
       ]
     },
     "PHY 2049 - Physics 2/22 Gauss's Law - PHY 2049.md": {
-      "modifiedTime": 1717280806671,
-      "sourceSize": 5216,
+      "modifiedTime": 1717609224340,
+      "sourceSize": 7320,
       "exportedPath": "phy-2049-physics-2/22-gauss's-law-phy-2049.html",
       "dependencies": []
     },
     "PHY 2049 - Physics 2/23 Electric Potential - PHY 2049.md": {
-      "modifiedTime": 1717280806671,
-      "sourceSize": 5097,
+      "modifiedTime": 1717609224340,
+      "sourceSize": 6181,
       "exportedPath": "phy-2049-physics-2/23-electric-potential-phy-2049.html",
       "dependencies": [
         "lib/media/equipotential-lines.png"
       ]
     },
     "PHY 2049 - Physics 2/24 Capacitance - PHY 2049.md": {
-      "modifiedTime": 1717280806671,
-      "sourceSize": 3608,
+      "modifiedTime": 1717609224340,
+      "sourceSize": 4961,
       "exportedPath": "phy-2049-physics-2/24-capacitance-phy-2049.html",
       "dependencies": [
         "lib/media/capacitor-symbol.png",
+        "lib/media/parallel-capacitors.png",
+        "lib/media/capacitors-in-a-series.png",
         "lib/media/dielectric.png"
       ]
     },
     "PHY 2049 - Physics 2/25 Electric Current and Resistance - PHY 2049.md": {
-      "modifiedTime": 1717280806671,
-      "sourceSize": 3098,
+      "modifiedTime": 1717609224340,
+      "sourceSize": 6641,
       "exportedPath": "phy-2049-physics-2/25-electric-current-and-resistance-phy-2049.html",
       "dependencies": [
         "lib/media/battery-circuit.png",
@@ -771,8 +780,8 @@
       ]
     },
     "PHY 2049 - Physics 2/PHY 2049 - Physics 2 with Calculus.md": {
-      "modifiedTime": 1717280806671,
-      "sourceSize": 1239,
+      "modifiedTime": 1717609224340,
+      "sourceSize": 1337,
       "exportedPath": "phy-2049-physics-2/phy-2049-physics-2-with-calculus.html",
       "dependencies": []
     },
@@ -909,8 +918,8 @@
       "dependencies": []
     },
     "index.md": {
-      "modifiedTime": 1717282004144,
-      "sourceSize": 2573,
+      "modifiedTime": 1717609224340,
+      "sourceSize": 3242,
       "exportedPath": "index.html",
       "dependencies": []
     },
@@ -921,7 +930,7 @@
       "dependencies": []
     },
     "lib/media/vector-projection.svg": {
-      "modifiedTime": 1717280806671,
+      "modifiedTime": 1717609224340,
       "sourceSize": 37804,
       "exportedPath": "lib/media/vector-projection.svg",
       "dependencies": []
@@ -933,343 +942,343 @@
       "dependencies": []
     },
     "lib/media/equipotential-lines.png": {
-      "modifiedTime": 1717280806671,
+      "modifiedTime": 1717609224340,
       "sourceSize": 37223,
       "exportedPath": "lib/media/equipotential-lines.png",
       "dependencies": []
     },
     "lib/media/capacitor-symbol.png": {
-      "modifiedTime": 1717280806671,
+      "modifiedTime": 1717609224340,
       "sourceSize": 17579,
       "exportedPath": "lib/media/capacitor-symbol.png",
       "dependencies": []
     },
     "lib/media/dielectric.png": {
-      "modifiedTime": 1717280806671,
+      "modifiedTime": 1717609224340,
       "sourceSize": 100128,
       "exportedPath": "lib/media/dielectric.png",
       "dependencies": []
     },
     "lib/media/battery-circuit.png": {
-      "modifiedTime": 1717280806671,
+      "modifiedTime": 1717609224340,
       "sourceSize": 655,
       "exportedPath": "lib/media/battery-circuit.png",
       "dependencies": []
     },
     "lib/media/resistor-symbol-united-states.png": {
-      "modifiedTime": 1717280806671,
+      "modifiedTime": 1717609224340,
       "sourceSize": 4204,
       "exportedPath": "lib/media/resistor-symbol-united-states.png",
       "dependencies": []
     },
     "lib/media/resistor-symbol-international.png": {
-      "modifiedTime": 1717280806671,
+      "modifiedTime": 1717609224340,
       "sourceSize": 5079,
       "exportedPath": "lib/media/resistor-symbol-international.png",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/fonts/mathjax_zero.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 1368,
       "exportedPath": "lib/fonts/mathjax_zero.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-regular.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 34160,
       "exportedPath": "lib/fonts/mathjax_main-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-bold.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 34464,
       "exportedPath": "lib/fonts/mathjax_main-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-italic.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 19360,
       "exportedPath": "lib/fonts/mathjax_math-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_main-italic.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 20832,
       "exportedPath": "lib/fonts/mathjax_main-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_math-bolditalic.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 19776,
       "exportedPath": "lib/fonts/mathjax_math-bolditalic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size1-regular.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 5792,
       "exportedPath": "lib/fonts/mathjax_size1-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size2-regular.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 5464,
       "exportedPath": "lib/fonts/mathjax_size2-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size3-regular.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 3244,
       "exportedPath": "lib/fonts/mathjax_size3-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_size4-regular.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 5148,
       "exportedPath": "lib/fonts/mathjax_size4-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_ams-regular.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 40808,
       "exportedPath": "lib/fonts/mathjax_ams-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-regular.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 9600,
       "exportedPath": "lib/fonts/mathjax_calligraphic-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_calligraphic-bold.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 9908,
       "exportedPath": "lib/fonts/mathjax_calligraphic-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-regular.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 21480,
       "exportedPath": "lib/fonts/mathjax_fraktur-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_fraktur-bold.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 22340,
       "exportedPath": "lib/fonts/mathjax_fraktur-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-regular.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 12660,
       "exportedPath": "lib/fonts/mathjax_sansserif-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-bold.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 15944,
       "exportedPath": "lib/fonts/mathjax_sansserif-bold.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_sansserif-italic.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 14628,
       "exportedPath": "lib/fonts/mathjax_sansserif-italic.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_script-regular.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 11852,
       "exportedPath": "lib/fonts/mathjax_script-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_typewriter-regular.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 17604,
       "exportedPath": "lib/fonts/mathjax_typewriter-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-regular.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 1136,
       "exportedPath": "lib/fonts/mathjax_vector-regular.woff",
       "dependencies": []
     },
     "lib/fonts/mathjax_vector-bold.woff": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 1116,
       "exportedPath": "lib/fonts/mathjax_vector-bold.woff",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1717283274568,
-      "sourceSize": 96955,
+      "modifiedTime": 1717609224340,
+      "sourceSize": 99560,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1717283274568,
-      "sourceSize": 11425,
+      "modifiedTime": 1717609224340,
+      "sourceSize": 11497,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 157722,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/theme.css": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 41426,
       "exportedPath": "lib/styles/theme.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 321,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
@@ -1281,9 +1290,45 @@
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1717283274568,
+      "modifiedTime": 1717609224340,
       "sourceSize": 47082,
       "exportedPath": "lib/styles/other-plugins.css",
+      "dependencies": []
+    },
+    "Public Media/Capacitors in a Series.png": {
+      "modifiedTime": 1717609224340,
+      "sourceSize": 6830,
+      "exportedPath": "public-media/capacitors-in-a-series.png",
+      "dependencies": []
+    },
+    "Public Media/Parallel Capacitors.png": {
+      "modifiedTime": 1717609224340,
+      "sourceSize": 5184,
+      "exportedPath": "public-media/parallel-capacitors.png",
+      "dependencies": []
+    },
+    "Public Media/Pasted image 20240604103533.png": {
+      "modifiedTime": 1717609224340,
+      "sourceSize": 6080,
+      "exportedPath": "public-media/pasted-image-20240604103533.png",
+      "dependencies": []
+    },
+    "lib/media/parallel-capacitors.png": {
+      "modifiedTime": 1717609224340,
+      "sourceSize": 5184,
+      "exportedPath": "lib/media/parallel-capacitors.png",
+      "dependencies": []
+    },
+    "lib/media/capacitors-in-a-series.png": {
+      "modifiedTime": 1717609224340,
+      "sourceSize": 6830,
+      "exportedPath": "lib/media/capacitors-in-a-series.png",
+      "dependencies": []
+    },
+    "lib/styles/snippets.css": {
+      "modifiedTime": 1717609224340,
+      "sourceSize": 32,
+      "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
     }
   }

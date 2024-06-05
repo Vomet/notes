@@ -1,20 +1,723 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Public Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://vomet.github.io/</link><image><url>https://vomet.github.io/lib/media/favicon.png</url><title>Public Notes</title><link>https://vomet.github.io/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 01 Jun 2024 23:07:56 GMT</lastBuildDate><atom:link href="https://vomet.github.io/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 01 Jun 2024 23:07:54 GMT</pubDate><copyright><![CDATA[Kevin D]]></copyright><ttl>60</ttl><dc:creator>Kevin D</dc:creator><item><title><![CDATA[Contact]]></title><description><![CDATA[ 
- <br><br>Welcome to my contact page! Currently, this is a work in-progress.<br>You can reach me at<br>
-<br>Personal: example [at] example [dot] com
-<br>Business: example [at] example [dot] com
-<br>Other: example [at] example [dot] com
-<br>Please replace [at] with @ and [dot] with ..<br>For example, if you have the following email:<br>example [at] example [dot] com
-Copy<br>the above would become<br>example@example.com
-Copy<br>Why do you use [at] and [dot]?
-There are bots all over the web trying to find emails. Using [at] and [dot] in place of @ and . provides some a small safeguard against these bots from finding my email.
-]]></description><link>https://vomet.github.io/contact.html</link><guid isPermaLink="false">Contact.md</guid><dc:creator><![CDATA[Kevin D]]></dc:creator><pubDate>Sat, 01 Jun 2024 22:32:40 GMT</pubDate></item><item><title><![CDATA[Public Home Page]]></title><description><![CDATA[ 
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Public Notes]]></title><description><![CDATA[Obsidian digital garden]]></description><link>https://vomet.github.io/</link><image><url>https://vomet.github.io/lib/media/favicon.png</url><title>Public Notes</title><link>https://vomet.github.io/</link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 05 Jun 2024 17:40:34 GMT</lastBuildDate><atom:link href="https://vomet.github.io/lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 05 Jun 2024 17:40:24 GMT</pubDate><copyright><![CDATA[Kevin D]]></copyright><ttl>60</ttl><dc:creator>Kevin D</dc:creator><item><title><![CDATA[02 Intro to C++]]></title><description><![CDATA[ 
  <br>Related:<br>
-Last modified: 2024-06-01 18:43:53<br><br><br>Warning
+Last modified: 2024-06-02 17:08:23<br><br><br>[TOC]<br><br>Special characters you should know:<br><br>The preprocessor reads the program before it is compiled. Any lines beginning in # will be executed first.<br>Multi-line comments<br>/*
+Multi-line comment begins here.
+
+Add anything in between.
+
+And ends here.
+*/
+Copy<br>Namespaces organize the names of program entities.<br>// Grabs the namespace called "std".
+using namespace std;
+Copy<br>Functions are used to group several statements together.<br>// Note that the data type of what the function returns must be stated too
+int main()
+{
+	cout &lt;&lt; "This is inside a function!\n";
+	cout &lt;&lt; "You can put in multiple lines and do multiple things inside one function!"
+	return 0;
+}
+Copy<br><br>Warning
+This section uses strings. Please include #include &lt;string&gt; at the beginning of your program to use strings.
+<br>cout is an object that displays output on the computer screen. For instance<br>// To use cout, you need to have these 3 lines:
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+// cout must also be inside a function too
+int main()
+{
+	cout &lt;&lt; "Hello world!";
+}
+Copy<br>would display Hello world! on the screen.<br>You can also send more than one item to cout too.<br>#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+// cout must also be inside a function too
+int main()
+{
+	cout &lt;&lt; "Hello" &lt;&lt; "world";
+	
+	// Or, you could do this too
+	cout &lt;&lt; "Hello ";
+	cout &lt;&lt; "world";
+}
+Copy<br>cout only outputs one line to the screen. To create a new line use endl or add \n in a string<br>#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main()
+{
+  cout &lt;&lt; "Hello" &lt;&lt; endl;
+  cout &lt;&lt; "world" &lt;&lt; endl;
+
+  /* Outputs:
+  Hello
+  world
+  */
+
+  // You can use \n too
+  cout &lt;&lt; "Hello\n";
+  cout &lt;&lt; "world";
+
+  /* Outputs:
+  Hello
+  world
+  */
+}
+
+Copy<br>You can even print with variables.<br>#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main()
+{
+	int number = 5;
+	cout &lt;&lt; "Number: " &lt;&lt; number;
+}
+Copy<br><br>#include inserts the contents of another file into the program. It is a preprocessor, so it's not part of C++. Do not put a ;.<br>For example, if you put in<br>#include &lt;iostream&gt;
+Copy<br>You are telling C++ to get a header file called iostream (which allows you to display stuff on the screen via cout).<br><br>Variables store stuff. They need a name and a type of data to hold. They also must be defined before they are used.<br>Here's an example:<br>int item;
+Copy<br>Literals are values written into the code. For instance "hello world" is a string literal and 12 could be an integer literal.<br><br>Identifiers is a programmer-defined name for some part of a program. This includes variables, functions, and more! These names should represent what the variable, function, or whatever does.<br>Naming rules for identifiers:<br>
+<br>First character must be a letter or an underscore
+<br>Use distinct names
+<br>No special characters
+<br>Key words are reserved words in C++ that cannot used as identifiers. For example, you cannot name a variable int because that's used to set a variable's data type.<br><br>Variables of the same type can be defined on the same lines, if you want.<br>int length, width;
+
+int length;
+int width;
+
+// Both do the same thing.
+Copy<br>To assign variables, use the equals sign or enclose it in parentheses<br>int width;
+width = 12; // Assigns 12 to width
+
+// You can also initialize (assign a value when the variable is defined)
+int length = 12;
+
+// You can initialize multiple on one line too
+int depth = 13, height = 2, area;
+
+// Parentheses method
+int num(5);
+int num{5}; // in C++ 11 or higher. This will check if `5` is an int or not.
+Copy<br><br>There are two different types of numbers: integers and floats.<br>ints store whole numbers. But, you can make them store other numbers too.<br>// all the different integer types.
+int num;
+short num;
+long num;
+long long num;
+Copy<br>Numbers are stored as ints by default, if they are whole numbers. You can change this by appending L to the number. This might arise if you've defined a variable as something other than an int and you assign it an integer.<br>int num;
+num = 8;
+
+// You can also choose to store them as "long" by appending L
+num = 8L;
+
+// Or, store as "long long" with LL
+num = 8LL;
+
+// Constants that begin with '0' are base 8
+num = 075
+
+// Constants that begin wtih '0x' are base 16
+num = 0x75AB
+Copy<br>Integers can also be unsigned. This means they can only store positive values. To do this, add unsigned before the data type.<br><br>Floating points can hold decimals as well as whole numbers. They are all stored in a form similar to scientific notation and are signed too.<br>There are 3 types: float, double, and long double.<br><br>long double is as big as or bigger than double; double is as big as or bigger than float.<br>float number;
+number = 31.4;
+
+// You can also use E notation too
+number = 3.14E1;
+number = 3.14e1;
+
+// You can also force numbers to be a long double or float too
+number = 31.4f // float
+number = 31.4L // long double
+Copy<br>Warning
+If you're trying to assign a float to an int variable, the fractional part will be discarded.
+<br><br>Holds a single character or integer. They must be enclosed in single quotation marks (').<br>char letter;
+letter = 'C';
+
+// Warning! This will not work!
+letter = "C";
+Copy<br>Strings also hold characters. They must be enclosed with "". You also need to put #include &lt;string&gt; too.<br>#include &lt;string&gt; // Required if you want to use strings
+
+// Define string with "string"
+string name;
+name = "Bob";
+Copy<br>When strings are stored in a computer's memory, they have \0 appended to them. The \0 is called the "null terminator" and it signifies the end of a string.<br><br>Booleans are either true or false. To use them in C++, use bool.<br>bool finished;
+finished = false;
+Copy<br><br>sizeof() tells you how big a data type or variable is.<br>double price;
+cout &lt;&lt; "Memory size: " &lt;&lt; sizeof(price)
+cout &lt;&lt; "Double size: " &lt;&lt; sizeof(double)
+Copy<br><br>auto tells the compiler to determine the variable's data type automatically based on the initialization value. It works for all data types.<br>auto price = 30; // Turns into an int
+auto letter = 'D'; // Turns into a char
+Copy<br><br>Named constant (also known as "constant variable") has data that cannot be changed during execution. They are usually written in uppercase letters.<br>#include &lt;string&gt;
+const string GREETING = "Hello";
+Copy<br><br>Scope: part of program where a variable can be accessed. Variables can't be used before they are defined.<br><br><br>A special note on division. If you divide two integers, you get back an integer. This can be problematic because there are situations where dividing two integers and gives a float instead.<br>For example, you might want . But, in C++,  would equal  if both terms were integers. To solve this, make one of the numbers into a float.<br>Here's a program to show you the differences:<br>#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main() {
+  cout &lt;&lt; "This is what 5/2 looks like when you:" &lt;&lt; endl;
+  cout &lt;&lt; "\tDivide by two integers: " &lt;&lt; 5 / 2 &lt;&lt; endl;
+  cout &lt;&lt; "\tDivide by at least one float: " &lt;&lt; 5 / 2.0 &lt;&lt; endl;
+  return 0;
+}
+Copy<br>The above would output<br>This is what 5/2 looks like when you:
+	Divide by two integers: 2
+	Divide by at least one float: 2.5
+
+Copy]]></description><link>https://vomet.github.io/cop-2220-introduction-to-c++/02-intro-to-c++-cop-2220.html</link><guid isPermaLink="false">COP 2220 - Introduction to C++/02 Intro to C++ - COP 2220.md</guid><dc:creator><![CDATA[Kevin D]]></dc:creator><pubDate>Sun, 02 Jun 2024 21:08:23 GMT</pubDate></item><item><title><![CDATA[03 Expressions and Interactivity]]></title><description><![CDATA[ 
+ <br>Related:<br>
+Last modified: 2024-06-03 04:37:29<br><br><br>[TOC]<br><br>The cin object reads input from the keyboard. It requires #include &lt;iostream&gt; to work.<br>Here's what it looks like:<br>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  int age;
+
+  // `cout` asks the user a question. `cin` reads the user's input and
+  // automatically formats it to fit the variable.
+  cout &lt;&lt; "Age: ";
+  cin &gt;&gt; age;
+  cout &lt;&lt; endl;
+
+  // `cin` can even ask for more than one variable at a time.
+  float height, width, area;
+  cout &lt;&lt; "Enter 2 floats for the height and width. Press enter after each one.\n";
+  cin &gt;&gt; height &gt;&gt; width;
+  cout &lt;&lt; "Height: " &lt;&lt; height;
+  // cin &gt;&gt; height;
+  cout &lt;&lt; "Width: " &lt;&lt; width;
+  // cin &gt;&gt; width;
+
+  area = height * width;
+  cout &lt;&lt; "Area: " &lt;&lt; area;
+}
+Copy<br><br>Math can be done as a variable, cout, or other statements.<br>All math in C++ follows the <a data-href="Order of Operations" href="https://vomet.github.io/Order of Operations" class="internal-link" target="_self" rel="noopener">Order of Operations</a>.<br>Here's how to do common math expressions:<br>#include &lt;iostream&gt;
+#include &lt;string&gt;
+#include &lt;cmath&gt; // Required for exponents.
+using namespace std;
+
+int main() {
+  int a = 5;
+  int b = 3;
+
+  cout &lt;&lt; "A: " &lt;&lt; a &lt;&lt; endl;
+  cout &lt;&lt; "B: " &lt;&lt; b &lt;&lt; endl;
+
+  cout &lt;&lt; "Addition: " &lt;&lt; a + b &lt;&lt; endl;
+  cout &lt;&lt; "Subtraction: " &lt;&lt; a - b &lt;&lt; endl;
+  cout &lt;&lt; "Multiplication: " &lt;&lt; a * b &lt;&lt; endl;
+  
+  // static_cast&lt;float&gt;(a) sets `a` to a float
+  cout &lt;&lt; "Division (with floats): " &lt;&lt; static_cast&lt;float&gt;(a) / b &lt;&lt; endl;
+  cout &lt;&lt; "Modulus: " &lt;&lt; a % b &lt;&lt; endl;
+
+  // Exponents require #include &lt;cmath&gt;
+  cout &lt;&lt; "Exponents (A^B): " &lt;&lt; pow (a, b);
+}
+Copy<br><br>Hierarchy of number types in C++ (ranked by highest number they can hold; highest maximum numbers first):<br>
+<br>long double
+<br>double
+<br>float
+<br>unsigned long
+<br>long
+<br>unsigned int
+<br>int
+<br>Type coercion: automatically converts one operand to another data type<br>
+<br>Promotion: converting the operand to a higher data type
+<br>Demotion: converting the operand to a lower data type
+<br>Rules of coercion:<br>
+<br>char, short, unsigned short are automatically promoted to int
+<br>When operating on values of different data types, the lower one is promoted to the type of the higher one.
+<br>When using the = operator, the expression on the right will be converted to the left expression's type
+<br><br>Variables can only store a set range of values. If a number goes outside this range, the number "wraps" around. For example, if the maximum value is 1000 and the minimum is 0 and you get a value like -1, it will "wrap around" and give you 1000.<br>Overflow vs. underflow:<br>
+<br>Overflow is when the assigned value is too big
+<br>Underflow is when the assigned value is too small
+<br><br>Type casting manually changes a data's type. This can be useful, especially when dividing.<br>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  int pay = 10;
+  int hours_worked = 4;
+
+  // This will give you the correct answer: 2.5
+  cout &lt;&lt; "Hourly Wage: " &lt;&lt; static_cast&lt;float&gt;(pay) / hours_worked &lt;&lt; endl;
+
+  // Other methods. static_cast is still preferred
+  cout &lt;&lt; float(pay) / hours_worked &lt;&lt; endl;
+  cout &lt;&lt; (float)pay / hours_worked &lt;&lt; endl;
+  
+  // Bear in mind though that this will give you 2.0. It divides to give 2, then turns 2 into a float
+  cout &lt;&lt; static_cast&lt;float&gt;(pay / hours_worked)
+}
+Copy<br><br>You can assign multiple variables to one variable.<br>#include &lt;iostream&gt;
+// Makes x, y, and z equal 5
+x = y = z = 5;
+
+cout &lt;&lt; x &lt;&lt; endl;
+cout &lt;&lt; y &lt;&lt; endl;
+cout &lt;&lt; z &lt;&lt; endl;
+Copy<br>Combined assignment is where you take a variable and perform some operation with another number to itself. Usually, they look like this:<br>#include &lt;iostream&gt;
+
+int main ()
+{
+	int x = 5;
+	
+	// Adding 4 to x
+	x = x + 4;
+	x += 4;
+	
+	cout &lt;&lt; x;
+	
+	// Subtracts 3 from x
+	x = x - 3;
+	x -= 3;
+	
+	// Multiply x by 10
+	x = x * 10;
+	x *= 10;
+	
+	// Divide x by 5
+	x = x / 5;
+	x /= 5;
+	
+	// Finds remainder after dividing x by 7
+	x = x % 7;
+	x %= 7;
+}
+Copy<br><br>The iomanip header file helps you control how data is outputted. For example, you can use it to output only a certain number of decimal points.<br><br>setw() lets you set a fixed minimum number of characters for your output. This is useful if you want to make tables.<br>For example, this program<br>#include &lt;iomanip&gt; // Required for setw()
+#include &lt;iostream&gt; // Required for displaying output
+
+int main ()
+{
+	int value = 42;
+	cout &lt;&lt; "[" &lt;&lt; setw(5) &lt;&lt; value &lt;&lt; "]";
+}
+Copy<br>outputs<br>[   42]
+Copy<br>Notice that there are 3 spaces between [ and 42. This is because 42 only has 2 characters and requires 3 spaces for it to have 5 characters in total.<br>If the value in setw() is less than the output, no spaces will be outputted.<br>For example, this program<br>#include &lt;iomanip&gt;
+#include &lt;iostream&gt;
+
+int main ()
+{
+	int value = 12345;
+	cout &lt;&lt; "[" &lt;&lt; setw(3) &lt;&lt; value &lt;&lt; "]";
+}
+Copy<br>outputs<br>[12345]
+Copy<br><br>setprecision() rounds your output to a certain number of significant figures.<br>#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
+using namespace std;
+
+int main () {
+	float pi = 3.14159265
+	cout &lt;&lt; setprecision(5) &lt;&lt; pi &lt;&lt; endl;
+	cout &lt;&lt; setprecision(4) &lt;&lt; pi &lt;&lt; endl;
+	cout &lt;&lt; setprecision(3) &lt;&lt; pi &lt;&lt; endl;
+	cout &lt;&lt; setprecision(2) &lt;&lt; pi &lt;&lt; endl;
+	cout &lt;&lt; setprecision(1) &lt;&lt; pi &lt;&lt; endl;
+}
+Copy<br>outputs<br>3.1416
+3.142
+3.14
+3.1
+3
+Copy<br>It's important to note that setprecision(x) outputs x-1 significant figures.<br><br>fixed forces cout to print a certain number of digits.<br><br>showpoint shows trailing zeroes if there aren't enough significat figures in the decimal<br><br>The problem with using cin is that it ignores things like spaces and tabs. To fix this, use getline(). It reads an entire line of input.<br>#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main() {
+  string name;
+  string city;
+
+  // Now you can input your first and last name.
+  cout &lt;&lt; "Name: ";
+  getline(cin, name);
+  
+  // You can input city names with spaces
+  cout &lt;&lt; "\nCity: ";
+  getline(cin, city);
+  
+  cout &lt;&lt; endl;
+  cout &lt;&lt; name &lt;&lt; endl;
+  cout &lt;&lt; city;
+}
+Copy<br>cin.get() will read the next character. This is useful if you want to make a program say "Enter a key to continue."<br>#include &lt;iostream&gt;
+using namespace std;
+
+char ch;  
+cout &lt;&lt; "Strike any key to continue";  
+cin &gt;&gt; ch;
+
+// cin can also be set to ignore characters
+cin.ignore(); // ignore next character
+int x = 3;
+cin.ignore(x, '\n'); // ignore `x` number of characters or until a '\n' is received
+Copy<br>Strings<br>#include &lt;string&gt;
+// Find length of string
+string state = "Texas";  
+int size = state.length();
+
+// Concatenation
+string city = "Austin";
+string country = "USA";
+
+string location = city + state;
+string location += country;
+Copy<br>setw() sets the width for output. It will add additional spaces if your variable doesn't have enough characters. If there are too many, it will cut some off.<br>cin.ignore() ignores the next character that is pressed. cin.ignore(x) ignores the next x characters that are pressed.<br><br>cmath is a library that helps you do math. Use #include &lt;cmath&gt; to use it.<br>#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+
+int main() {
+    // Calculate square root
+    double num = 25.0;
+    double sqrtResult = std::sqrt(num);
+    std::cout &lt;&lt; "Square root of " &lt;&lt; num &lt;&lt; " is: " &lt;&lt; sqrtResult &lt;&lt; std::endl;
+
+    // Calculate sine
+    double angleInDegrees = 45.0;
+    double angleInRadians = angleInDegrees * M_PI / 180.0; // Convert degrees to radians
+    double sineResult = std::sin(angleInRadians);
+    std::cout &lt;&lt; "Sine of " &lt;&lt; angleInDegrees &lt;&lt; " degrees is: " &lt;&lt; sineResult &lt;&lt; std::endl;
+
+    // Calculate logarithm
+    double logValue = 100.0;
+    double logResult = std::log10(logValue);
+    std::cout &lt;&lt; "Logarithm base 10 of " &lt;&lt; logValue &lt;&lt; " is: " &lt;&lt; logResult &lt;&lt; std::endl;
+
+    return 0;
+}
+Copy<br>&lt;cstdlib&gt; contains functions for random numbers and &lt;ctime&gt; contains functions for time.<br><br>Act like you're a computer executing the program. Take things step-by-step. This is useful for finding errors.]]></description><link>https://vomet.github.io/cop-2220-introduction-to-c++/03-expressions-and-interactivity-cop-2220.html</link><guid isPermaLink="false">COP 2220 - Introduction to C++/03 Expressions and Interactivity - COP 2220.md</guid><dc:creator><![CDATA[Kevin D]]></dc:creator><pubDate>Mon, 03 Jun 2024 08:37:29 GMT</pubDate></item><item><title><![CDATA[05 Loops - COP 2220]]></title><description><![CDATA[ 
+ <br>Related:<br>
+Last modified: 2024-06-03 04:42:59<br><br><br>[TOC]<br><br>++ increments by one. In other words, it adds 1.<br>-- decrements by one. In other words, it subtracts 1.<br>#include &lt;iostream&gt;
+
+int main () {
+	int val = 0;
+	
+	// All of the following add 1 to `val`.
+	val = val + 1;
+	val += 1;
+	val++;
+	++val;
+	
+	// All of the following subtract 1 from `val`.
+	val = val - 1;
+	val -= 1;
+	val--;
+	--val;
+	
+	cout &lt;&lt; val;
+}
+Copy<br>In prefix mode (example: --val, ++val), the variable is incremented then returned.<br>In postfix mode (example: val--, val++), the variable is returned then incremented.<br>This can have an impact on your program!<br>Increments<br>
+<br>may be used in expressions (i.e. ++num + val--;)
+<br>must have some location in memory
+<br>can be used in relational expressions (i.e. ++num &lt; val)
+<br><br>Loops repeatedly run a section of code.<br>While loops execute a section of statements until the expression is false.<br>while (expression) {
+	statement;
+}
+Copy<br>Be careful of creating infinite loops. It can crash your system.<br>While loops can be used for input validation. This is because they execute the same lines of code until the user inputs a valid choice (which makes the expression false).<br>Counter: variable that is incremented or decremented every time the loop executes code.<br><br>do-while: execute the loop, then test the expression.<br>
+<br>If the expression is true, loop again
+<br>If the expression is false, exit
+<br>do {
+	statement;
+} while (expression);
+Copy<br>do-while executes the statement at least once. This also makes them good for menu-driven programs.<br><br>for(initialization; test; update)  
+{
+	statement;
+}
+Copy<br>
+<br>initialization  assigns a variable to something. You can initialize multiple if you wish. Separate them using a ,.
+
+<br>example: for(x=1, y=1; test; update)
+<br>may be omitted. Just add a ;.
+
+<br>example: for(; x&lt;5; x++)
+
+
+
+
+<br>test tests an expression.
+
+<br>If it's true, it will execute the loop again.
+<br>If false, break out of the loop
+
+
+<br>update: executed if test is true. You can update multiple variables if you want
+
+<br>example: for(x=1; x&lt;5; x++, y++)
+
+
+<br>Use for loops when there is:<br>
+<br>an initialization  
+<br>a false condition to stop the loop  
+<br>an update to occur at the end of each iteration
+<br><br>Sentinels terminate input. This is useful when you don't know how many values the user to input but you still want a way for the program to quit.<br><br>Nested loops are when loops are inside other loops.<br><br>To store files using your program:<br>
+<br>Open the file
+<br>Use the file
+<br>Close the file
+<br>#include &lt;fstream&gt; is used for file access.<br>
+<br>ifstream accepts input
+<br>ofstream outputs to file
+<br>fstream does input and output
+<br>To define file stream objects<br>#include &lt;fstream&gt;
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+// Defining file stream objects
+ifstream input_file;
+ofstream output_file;
+fstream file;
+
+// Open files
+input_file.open("input.txt");
+output_file.open("output.txt");
+file.open("input_and_output.txt");
+
+// Sending output to a file
+output_file &lt;&lt; "Sending output to a file";
+
+// Sending file input to variables
+string input, string input_2, string input_3;
+input_file &gt;&gt; input;
+
+// You can even copy input to multiple variables
+input_file &gt;&gt; input_2 &gt;&gt; input_3;
+
+/*
+- If file input was accepted successfully, `&gt;&gt;` will output true.
+- If file input was not accepted successfully, `&gt;&gt;` will output false
+
+This is useful for error handling.
+*/
+
+// Close files when you're finished.
+input_file.close();
+output_file.close();
+file.close();
+Copy<br><br>break lets you break out of a loop. Use it sparingly because it makes code harder to read.<br>continue jumps straight to the end of the loop and prepares for the next iteration. It skips the rest of the code. Just like break, use it sparingly because it makes code hard to read.]]></description><link>https://vomet.github.io/cop-2220-introduction-to-c++/05-loops-cop-2220.html</link><guid isPermaLink="false">COP 2220 - Introduction to C++/05 Loops - COP 2220.md</guid><dc:creator><![CDATA[Kevin D]]></dc:creator><pubDate>Mon, 03 Jun 2024 08:42:59 GMT</pubDate></item><item><title><![CDATA[12 Vectors and the Geometry of Space - MAC 2313]]></title><description><![CDATA[ 
+ <br>Related: <a data-href="MAC 2313 - Calculus 3 with Analytical Geometry" href="https://vomet.github.io/mac-2313-calculus-3/mac-2313-calculus-3-with-analytical-geometry.html" class="internal-link" target="_self" rel="noopener">MAC 2313 - Calculus 3 with Analytical Geometry</a><br><br><br><br>Points in 3 dimension are represented as:<br><br>or<br><br>where , , and  represent how far one must go in the respective dimension and  is the th point that you're trying to represent.<br>Example
+ tells you to move:
+
+<br> units in the  dimension
+<br> units in the  dimension
+<br> units in the  dimension
+
+<br>
+<br>The  plane exists where 
+<br>The  plane exists where 
+<br>The  plane exists where 
+<br><br>An octant is like a quadrant but for 3 dimensions. It is&nbsp;one of eight regions divided by the coordinate axes.<br>For example, octant I (one) contains only positive , , and  values.<br>This table summarizes the values you might find in each octant.<br><br>Note that octants are denoted by Roman numerals.<br><br>The standard equation of a sphere is given by:<br><br>The sphere is centered at  and has a radius of .<br><br>Vectors have magnitude and direction.<br>
+<br>Direction tells you where the vector is pointing.
+<br>Magnitude tells you how long a vector is.
+<br>To denote that a variable is a vector, put an arrow on top of it. For example,  is essentially "vector ". Vectors may also be written as bolded letters. This means  may be written as .<br>Vectors can be written as:<br><br>You can also write them in terms of <a data-href="#Unit Vectors" href="https://vomet.github.io/about:blank#Unit_Vectors" class="internal-link" target="_self" rel="noopener">Unit Vectors</a> using <a data-href="#Vector Components" href="https://vomet.github.io/about:blank#Vector_Components" class="internal-link" target="_self" rel="noopener">Vector Components</a>:<br><br>Moreover, you can write them in terms of magnitude and direction:<br><br>where  is the direction.<br>The same can also be done using <a data-href="#Unit Vectors" href="https://vomet.github.io/about:blank#Unit_Vectors" class="internal-link" target="_self" rel="noopener">Unit Vectors</a>:<br><br>where  is the unit vector.<br><br>To find the magnitude of a vector, use the following:<br><br><br>A vector component is a projection of a vector onto a specific axis or direction. To denote a vector component, add a subscript and the dimension for which the vector is projected onto.<br>Example
+Suppose  has a length of , faces , and is defined on a 2D Cartesian coordinate plane.
+If you want to find  component, you'd need to use .
+
+And for its  component, use .
+
+<br><br>Unit vectors have a length of  and face the same direction as the vector they represent.<br>To find the magnitude and direction of a unit vector:<br><br>where  is the unit vector of vector .<br><br>The standard unit vectors are:<br><br>Vectors can be represented in terms of unit vectors like this:<br><br>Or, you can bold , , and  instead:<br>
+<br><br>Related: <a data-href="Dot Product" href="https://vomet.github.io/other-math/dot-product.html" class="internal-link" target="_self" rel="noopener">Dot Product</a><br>The&nbsp;dot&nbsp;product&nbsp;tells you what amount of one&nbsp;vector&nbsp;goes in the direction of another.<br>Let  and . The dot product of  and  would then be:<br><br>Interestingly,<br><br>Additionally:<br><br>It should be important to note that<br><br><br>The scalar component of  in the direction of  is:<br><br>The notation  represents the projection of vector  onto vector . This projection is a vector that is parallel to  and represents the component of  that lies in the direction of .<br><br>The distance from the tip of  (which we will call point ) to closest point on  (which we will call ) is:<br><br>The above is also used to find the distance from an arbitrary point to the plane.<br>Here's what that looks like:<br><img alt="Vector Projection.svg" src="https://vomet.github.io/lib/media/vector-projection.svg"><br><br>Related: <a data-href="Cross Product" href="https://vomet.github.io/other-math/cross-product.html" class="internal-link" target="_self" rel="noopener">Cross Product</a><br>The cross product of  and  is:<br><br>Interestingly,  gives you the area of a parallelogram with  and  as its sides.<br><br>where  is defined as:<br><br>or, the th term in  dimensions for .<br>The cross product is related to :<br>
+<br>The cross product creates a vector orthogonal to  and .<br>Torque is the cross product of radius and force:<br><br><br>The box product of  and  is:<br><br>Note that<br><br><br> and  are perpendicular if<br><br> and  are parallel if<br><br><br>Suppose that<br><br>and  is located at .<br>Then the parametric equations for  are<br><br>where  is the parameter.<br>You can use these properties to construct parametric equations for a vector given a point. You can also find a vector and a point given parametric equations too.<br><br>Suppose a flat plane is defined in 3D as:<br><br>Then, the plane will intercept these 3 points:<br><br>Additionally, a vector perpendicular to this plane is defined as:<br><br>Example
+Find the intercepts of this plane:
+
+The intercepts can be found using:
+
+Therefore, the plane intersects these points:
+
+And finally, a vector perpendicular to the plane is:
+
+<br>The equation for a plane passing through  and is normal  is:<br><br><br>Cylindrical surfaces are like curved planes. It would be like taking a function defined on the  (or ) and extending it out into 3D (or along the  axis).<br>You can use conics to create ellipses, hyperbolas, parabolas, and circles. See <a data-href="10 Conics, Parametric Equations, and Polar Coordinates - MAC 2312" href="https://vomet.github.io/mac-2312-calculus-2/10-conics,-parametric-equations,-and-polar-coordinates-mac-2312.html" class="internal-link" target="_self" rel="noopener">10 Conics, Parametric Equations, and Polar Coordinates - MAC 2312</a> for more information.<br><br>
+<br>Home: <a data-href="MAC 2313 - Calculus 3 with Analytical Geometry" href="https://vomet.github.io/mac-2313-calculus-3/mac-2313-calculus-3-with-analytical-geometry.html" class="internal-link" target="_self" rel="noopener">MAC 2313 - Calculus 3 with Analytical Geometry</a>
+<br>Next: <a data-href="13 Vector-Valued Functions and Motion in Space - MAC 2313" href="https://vomet.github.io/mac-2313-calculus-3/13-vector-valued-functions-and-motion-in-space-mac-2313.html" class="internal-link" target="_self" rel="noopener">13 Vector-Valued Functions and Motion in Space - MAC 2313</a>
+]]></description><link>https://vomet.github.io/mac-2313-calculus-3/12-vectors-and-the-geometry-of-space-mac-2313.html</link><guid isPermaLink="false">MAC 2313 - Calculus 3/12 Vectors and the Geometry of Space - MAC 2313.md</guid><dc:creator><![CDATA[Kevin D]]></dc:creator><pubDate>Sun, 02 Jun 2024 19:03:58 GMT</pubDate><enclosure url="https://vomet.github.io/lib/media/vector-projection.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="https://vomet.github.io/lib/media/vector-projection.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[13 Vector-Valued Functions and Motion in Space - MAC 2313]]></title><description><![CDATA[ 
+ <br>Related: <br><br><br><br>Let a  be a curve that is defined by the following parametric equations:<br><br>The curve traced by  is smooth if  is continuous and never 0.<br> is typically called the "position vector." For velocity and acceleration:<br><br>Speed is found using:<br><br>or, the magnitude of .<br><br>Suppose that<br><br>Then the derivative of  would be:<br><br>And the integral of  would be:<br><br>Example
+Find
+
+Firstly, split the integral across each of the components.
+
+Then, integrate each part.
+
+<br>As you can see from the example above, not much is different from normal integration. You're essentially applying the integral on each unit vector and integrating them individually before combining them at the end.<br><br>The equations for projectile motion are:<br><br>where<br>
+<br>. This is the acceleration due to gravity
+<br> is the angle
+<br> is time
+<br> is initial velocity
+<br>These are based off the equations for <a data-tooltip-position="top" aria-label="02 1D Kinematics - PHY 2048" data-href="02 1D Kinematics - PHY 2048" href="https://vomet.github.io/phy-2048-physics-1/02-1d-kinematics-phy-2048.html" class="internal-link" target="_self" rel="noopener">kinematics</a>. However, they are heavily simplified for calculus 3.<br>The ideal projectile motion equation is:<br><br>whose components are:<br>]]></description><link>https://vomet.github.io/mac-2313-calculus-3/13-vector-valued-functions-and-motion-in-space-mac-2313.html</link><guid isPermaLink="false">MAC 2313 - Calculus 3/13 Vector-Valued Functions and Motion in Space - MAC 2313.md</guid><dc:creator><![CDATA[Kevin D]]></dc:creator><pubDate>Wed, 05 Jun 2024 13:38:40 GMT</pubDate></item><item><title><![CDATA[22 Gauss's Law - PHY 2049]]></title><description><![CDATA[ 
+ <br>Related: <br><br><br>Gauss's Law is best applied on symmetrical objects. It is faster than using Coulomb's Law.<br><br>Electric flux is the electric field passing through a given area. <br>One way to conceptually imagine electric flux is to imagine a point charge shooting bullets out. The number of bullets the field catches at the edge is the amount of flux in the area.<br>For a uniform electric field with flat area:<br><br>where  is the electric field and  is the area.<br>To measure electric flux for non-uniform electric fields with curved areas:<br><br>Bear in mind that  is a dot product.<br>Example
+Find the electric flux for a point charge in the center of a sphere.
+Firstly, we know that
+
+ is constant throughout, so we can take it out of the integral:
+
+Note that  isn't always constant!
+We can rewrite  thanks to Coulomb's Law to get:
+
+The total surface area of a sphere is , so:
+
+<br>Believe it or not, the answer from the example above is important for defining Gauss's Law.<br><br>Gauss's Law states that the electric flux through a closed surface is:<br><br>where<br>
+<br> is the charge
+<br> and is the permittivity of free space
+<br> is the electric field
+<br> is the area
+<br>Why is there a circle in the integral?
+The circle is used to signify that it is a "contour integral". Contour integrals calculate how the function behaves along a closed path. They are also used when looking at the complex plane.
+<br>This means that no matter the shape of the field,  will always remain the same.<br>Also, if any point charge is located outside of the electric field, the net flux will be 0.<br>For  number of charges:<br><br><br>The electric field  units away from the center of a spherically symmetric charge distribution is:<br><br>Interestingly, we just derived Coulomb's Law using Gauss's Law.<br><br>Suppose you have an imaginary balloon in the shape of a sphere. Inside this imaginary balloon, you have a bomb. The bomb explodes a certain number of particles, which we'll call . Let's also suppose that when the particles hit the imaginary balloon, the balloon does not explode. Instead, the particles pass through the balloon.<br>In our example, let's suppose that the bomb explodes 10 particles out (so, ).<br>We know that the number of particles that hit the balloon is found using this integral:<br><br>That above integral essentially states that  (the direction of the shrapnel after the ball explodes) is related to an infinitesimally small area on the balloon () through a <a data-href="Dot Product" href="https://vomet.github.io/other-math/dot-product.html" class="internal-link" target="_self" rel="noopener">Dot Product</a>.<br>Why use a dot product?
+The <a data-href="Dot Product" href="https://vomet.github.io/other-math/dot-product.html" class="internal-link" target="_self" rel="noopener">Dot Product</a> is used because if  and  are parallel to one another, then they never touch.
+To think about this conceptually, if you have a piece of shrapnel flying off in a direction parallel to a wall next to it, does it ever hit the wall? No, it does not.
+<br>Gauss's Law states that the number of particles that hit this imaginary balloon is<br><br>In other words, it's related to the charge and the permittivity of free space. Since  is a constant, it is the charge () that determines the number of particles our bomb shoots out.<br><br>Let's say you have two bombs inside of this imaginary balloon that each explode 10 particles. How many particles will hit the balloon?<br>Well, the answer is 20. All the particles will eventually hit the imaginary balloon.<br>Now, suppose you have  bombs. This would mean that the flux (or total number of particles passing through the balloon) is:<br><br>where  is the number of particles each individual bomb emits.<br><br>A continuous charge distribution can exist along a line, surface area, or volume of charge. Note that these each use different variables:<br><br>Charge distributions describe how a charge is distributed in space and how it can change over that space.<br>The equations for a continuous charge distribution are:<br><br>It should be important to note that these integrals can be broken down into  and  components.<br><br>The linear charge density is:<br><br>where  is the charge and  is the length.<br>The surface charge density is:<br><br>where  is the charge and  is the area.<br>The volume charge density is:<br><br>where  is the charge and  is the volume.<br><br>The field between 2 parallel plate capacitors is<br><br>where  is the surface charge density and  is the permittivity of free space.<br>Note that nothing can be in between the two parallel plate capacitors.<br>The field outside of this specific area (in other words, not in between the two capacitors) is 0.<br><br>The electric field near any non-conducting surface is:<br><br>The electric field near any conducting surface is:<br><br>Notice how the electric field near a conducting surface is twice as big compared to an electric field near a non-conducting surface.<br><br>
+<br>Home: <a data-href="PHY 2049 - Physics 2 with Calculus" href="https://vomet.github.io/phy-2049-physics-2/phy-2049-physics-2-with-calculus.html" class="internal-link" target="_self" rel="noopener">PHY 2049 - Physics 2 with Calculus</a>
+<br>Previous: <a data-href="21 Electric Charge - PHY 2049" href="https://vomet.github.io/phy-2049-physics-2/21-electric-charge-phy-2049.html" class="internal-link" target="_self" rel="noopener">21 Electric Charge - PHY 2049</a>
+<br>Next: <a data-href="23 Electric Potential - PHY 2049" href="https://vomet.github.io/phy-2049-physics-2/23-electric-potential-phy-2049.html" class="internal-link" target="_self" rel="noopener">23 Electric Potential - PHY 2049</a>
+]]></description><link>https://vomet.github.io/phy-2049-physics-2/22-gauss's-law-phy-2049.html</link><guid isPermaLink="false">PHY 2049 - Physics 2/22 Gauss's Law - PHY 2049.md</guid><dc:creator><![CDATA[Kevin D]]></dc:creator><pubDate>Tue, 04 Jun 2024 14:14:02 GMT</pubDate></item><item><title><![CDATA[23 Electric Potential - PHY 2049]]></title><description><![CDATA[ 
+ <br>Related: <br><br><br>Electric Potential vs. Electric Potential Energy
+Electric potential is the amount of work needed to move a point charge from one location to another. It is measured in Volts.
+Electric potential energy is the energy a body has due to its position in the electric field. It is measured in Joules. 
+<br><br>A volt measures the electric potential between two points. It is defined as<br><br>where<br>
+<br> is the potential energy
+<br> is the charge
+<br>One volt equals one Joule per Coulomb.<br><br>To find the work done by electric potential:<br><br>where<br>
+<br> is the charge
+<br> is the electric field
+<br> is displacement
+<br>This also means that<br><br><br>Potential inside a conductor is constant throughout.<br><br>How charges move:<br>
+<br>Positive charges move from higher potential to lower potential.
+<br>Negative charges move from lower potential to higher potential.
+<br>The potential energy of a positively charged particle is higher at points of higher potential and lower at points of lower potential.
+<br>Both positive and negative charges gain potential when moving to spaces of higher potential energy.<br><br>Potential difference is defined as:<br><br>and is measured in Volts.<br>In other words, potential difference is change in potential energy ().<br>Work is equal to:<br>
+<br>An electric field points wherever potential energy decreases the quickest.<br><br>Because , this is also true:<br><br>When a positive charge is placed into a field, going closer increases . Going away decreases it.<br>When a negative charge is placed into a field, going closer decreases . Going away increases it.<br>For both positive and negative charges, moving in the direction of an electric field decreases .<br><br>For any continuous charge distribution:<br><br>where  is the distance from a certain point to the charge distribution,  is the charge, and .<br><br>The units for potential difference are Volts (). One Volt is equal to one Joule per Coulomb ().<br>The unit of the electric field is either Newtons per Coulomb () or Volt per metre ().<br><br>For point charges<br><br>This means that .<br>You can generalize this using the principle of superposition to get:<br><br>for  number of point charges.<br>It should be important to note that the above equality is not a vector sum.<br>To solve:<br>
+<br>Draw a diagram
+<br>Calculate the distances for each point charge
+<br>Use .
+
+<br>Use positive values if the charge is positive; use negative values if the charge is negative
+
+
+<br>Use the superposition principle for multiple charges
+<br><br>If two point charges in an electric field have the same sign, positive work is being done because they repel each other.<br>If two point charges in an electric field have different signs, work is required to hold them back because they are attracted to one another.<br>The potential due to a dipole is defined as<br><br>If you let  and :<br><br>which can be rewritten as<br><br>where <br>
+<br> is the dipole moment
+<br> is the charge 
+<br> is the distance between the charges
+<br>
+<br> is the angle
+<br><br>Equipotential surfaces are surfaces where all points have the same potential.<br>The electric field is related to electric potential like so:<br><br>where , , and  are unit vectors.<br><br>The potential energy for  number of point charges is:<br><br>where:<br>
+<br> is the total electrostatic potential energy.
+<br> is Coulomb's constant ().
+<br> and  are the magnitudes of the charges.
+<br> is the distance between charges  and .
+<br>Example
+For example, if you're trying to find the potential for  point charges:
+
+Note that we're only looking for all possible permutations for charges 1, 2, and 3.
+<br><br>These are lines drawn to show how much voltage is at a certain distance away from some object.<br><img alt="Equipotential Lines.png" src="https://vomet.github.io/lib/media/equipotential-lines.png"><br><br>The electron volt is an energy unit for electrons and protons. It is presented using .<br><br>In other words, one electron volt is equal to  Joules.<br><br>
+<br>Home: <a data-href="PHY 2049 - Physics 2 with Calculus" href="https://vomet.github.io/phy-2049-physics-2/phy-2049-physics-2-with-calculus.html" class="internal-link" target="_self" rel="noopener">PHY 2049 - Physics 2 with Calculus</a>
+<br>Previous: <a data-href="22 Gauss's Law - PHY 2049" href="https://vomet.github.io/phy-2049-physics-2/22-gauss's-law-phy-2049.html" class="internal-link" target="_self" rel="noopener">22 Gauss's Law - PHY 2049</a>
+<br>Next: <a data-href="24 Capacitance - PHY 2049" href="https://vomet.github.io/phy-2049-physics-2/24-capacitance-phy-2049.html" class="internal-link" target="_self" rel="noopener">24 Capacitance - PHY 2049</a>
+]]></description><link>https://vomet.github.io/phy-2049-physics-2/23-electric-potential-phy-2049.html</link><guid isPermaLink="false">PHY 2049 - Physics 2/23 Electric Potential - PHY 2049.md</guid><dc:creator><![CDATA[Kevin D]]></dc:creator><pubDate>Wed, 05 Jun 2024 17:39:06 GMT</pubDate><enclosure url="https://vomet.github.io/lib/media/equipotential-lines.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://vomet.github.io/lib/media/equipotential-lines.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[24 Capacitance - PHY 2049]]></title><description><![CDATA[ 
+ <br>Related: <br><br><br>Capacitors transfer electron charges. This transfer stops when the voltage from the capacitor is the same as the battery (). Additionally, electrons flow from the positive plate to the negative plate.<br><br>Capacitance is the capability of an object to store electric charge.<br>Capacitance is found using:<br><br>where<br>
+<br> is the charge
+<br> is change in potential that occurs because you are sticking a negative plate next to a positive plate.
+<br>It can also be rewritten as<br><br>where<br>
+<br> is the area of the capacitor in question
+<br>
+<br> is the diameter or distance between the parallel plates
+<br>Note
+ does not change due to a change in  or . If  goes up,  goes up by the same amount.
+The only way to change  is by changing the values for  and .
+<br>Capacitance is measured in Farads (). One Farad is equal to one Coulomb per Volt.<br><br>You will often see Farads as  or . They are small units.<br>Capacitors are drawn as:<br><img alt="Capacitor Symbol.png" src="https://vomet.github.io/lib/media/capacitor-symbol.png" style="width: 500px; max-width: 100%;"><br>This image was retrieved from Wikimedia Commons: <a rel="noopener" class="external-link" href="https://commons.wikimedia.org/wiki/File:Capacitor_simbolo.png" target="_blank">https://commons.wikimedia.org/wiki/File:Capacitor_simbolo.png</a>.<br>If parallel plate capacitors are only separated by air:<br><br>where<br>
+<br> is the charge
+<br>
+<br> is the area of one capacitor
+<br>Potential is measured using<br><br>which can be simplified to<br><br><br>Parallel capacitors look like this:<br><img alt="Parallel Capacitors.png" src="https://vomet.github.io/lib/media/parallel-capacitors.png"><br>If capacitors are parallel to each other in a circuit, then the total capacitance is<br><br>for  number of parallel capacitors.<br><br>Capacitors in a series are hooked up one after the other as shown in this image below:<br><img alt="Capacitors in a Series.png" src="https://vomet.github.io/lib/media/capacitors-in-a-series.png"><br>Net capacitance is equal to:<br><br>for  number of capacitors in a series.<br>Example
+Find the total capacitance for  and . Note that  and  are in a series.
+
+<br><br>Work is defined as:<br><br>Work equals change in any energy. In this case, we can let  (where  is the change in potential energy). This would mean that energy is stored as<br><br>Note that any of the above formulas are correct.<br>The energy stored in a capacitor is<br><br>where<br>
+<br>
+<br> is the electric field
+<br> is the area
+<br> is the diameter or separation thickness between the parallel plates
+<br><br>Dielectrics are insulating material placed in between the parallel plates of a capacitor.<br><img alt="Dielectric.png" src="https://vomet.github.io/lib/media/dielectric.png"><br>The above image was retrieved from Wikipedia: <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/File:Capacitor_schematic_with_dielectric.svg" target="_blank">https://en.wikipedia.org/wiki/File:Capacitor_schematic_with_dielectric.svg</a><br>Dielectrics affect capacitance. They are represented as  in many equations.  is known as the "dielectric constant".<br>The relationship between variables is listed below (with and without ).<br><br>where variables marked with subscript 0 are considered "initial values" without the dielectric. For example,  represents capacitance without a dielectric while  represents capacitance with a dielectric.<br>More simply:<br><br>Energy density () tells you how much energy is stored in a certain amount of volume.<br><br>Note also that<br><br>And<br><br>where<br>
+<br> is the potential energy
+<br> is volume, not voltage
+<br><br>
+<br>Home: <a data-href="PHY 2049 - Physics 2 with Calculus" href="https://vomet.github.io/phy-2049-physics-2/phy-2049-physics-2-with-calculus.html" class="internal-link" target="_self" rel="noopener">PHY 2049 - Physics 2 with Calculus</a>
+<br>Previous: <a data-href="23 Electric Potential - PHY 2049" href="https://vomet.github.io/phy-2049-physics-2/23-electric-potential-phy-2049.html" class="internal-link" target="_self" rel="noopener">23 Electric Potential - PHY 2049</a>
+<br>Next: <a data-href="25 Electric Current and Resistance - PHY 2049" href="https://vomet.github.io/phy-2049-physics-2/25-electric-current-and-resistance-phy-2049.html" class="internal-link" target="_self" rel="noopener">25 Electric Current and Resistance - PHY 2049</a>
+]]></description><link>https://vomet.github.io/phy-2049-physics-2/24-capacitance-phy-2049.html</link><guid isPermaLink="false">PHY 2049 - Physics 2/24 Capacitance - PHY 2049.md</guid><dc:creator><![CDATA[Kevin D]]></dc:creator><pubDate>Tue, 04 Jun 2024 14:36:16 GMT</pubDate><enclosure url="https://vomet.github.io/lib/media/capacitor-symbol.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://vomet.github.io/lib/media/capacitor-symbol.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[25 Electric Current and Resistance]]></title><description><![CDATA[ 
+ <br>Related: <br><br><br><br>Batteries store energy. They are represented like this:<br><img alt="Battery Circuit.png" src="https://vomet.github.io/lib/media/battery-circuit.png"><br>
+<br>The longer line (on the right) represents the positive end of the battery. 
+<br>The shorter line (on the left) represents the negative end of the battery.
+<br><br>Current () is the rate at which charge flows through a surface.<br>Current is represented mathematically as<br><br>Or, the change in charge () over time ().<br>Current is measured in Amperes (often shortened to "Amps"). One Ampere () is equal to one Coulomb per second.<br><br>The total charge is typically measured in Ampere-hours and can be found using:<br><br><br>Conventional current flows from positive terminal to the negative terminal. Conventional current is how we assume current will flow. In other words, it's defined as the direction that positive charge flows.<br>Note that negative charges flow in the opposite direction.<br>Moving charges in a circuit are called "charge carriers."<br><br>Resistance () opposes the current. You can imagine this like friction.<br>Resistance is found using<br><br>where<br>
+<br> is the change in voltage
+<br> is <a data-href="#Current" href="https://vomet.github.io/about:blank#Current" class="internal-link" target="_self" rel="noopener">Current</a>
+<br>Resistance is measured in Ohms (). One Ohm is equal to one Volt per Ampere.<br><br>Ohm's Law states that<br><br><br>Resistors let you resist electricity.<br>There are two different symbols for resistor. This one shows the ANSI standard used in the United States:<br><img alt="Resistor Symbol - United States.png" src="https://vomet.github.io/lib/media/resistor-symbol-united-states.png"><br>And this one shows the IEC standard used internationally.<br><img alt="Resistor Symbol - International.png" src="https://vomet.github.io/lib/media/resistor-symbol-international.png"><br>Resistors may also have color codes on them telling you how much their resistance is.<br><br>Resistivity is the resistance of an Ohmic conductor. Materials that obey Ohm's Law are said to be "Ohmic."<br>Resistivity is found using:<br><br>where<br>
+<br> is the resistance
+<br> is the resistivity constant. It depends on the material used.
+<br> is the area of a slice of wire
+<br> is the length of the wire
+<br><br>Resistivity can vary due to temperature. You can measure this using<br><br>where<br>
+<br> is the <a data-href="#Resistivity" href="https://vomet.github.io/about:blank#Resistivity" class="internal-link" target="_self" rel="noopener">Resistivity</a> at temperature 
+<br> is the <a data-href="#Resistivity" href="https://vomet.github.io/about:blank#Resistivity" class="internal-link" target="_self" rel="noopener">Resistivity</a> at temperature 
+<br> is a constant that varies depending on the temperature and metal used
+<br>Resistance can also vary due to temperature too<br><br>
+<br> is the <a data-href="#Resistance" href="https://vomet.github.io/about:blank#Resistance" class="internal-link" target="_self" rel="noopener">Resistance</a> at temperature 
+<br> is the <a data-href="#Resistance" href="https://vomet.github.io/about:blank#Resistance" class="internal-link" target="_self" rel="noopener">Resistance</a> at temperature 
+<br> is a constant that varies depending on the temperature and metal used
+<br>Warning
+These linear estimations only work on a small range of temperatures outside of .
+<br><br>Power is given using:<br><br>where <br>
+<br> is the current
+<br> is the voltage
+<br> is the resistance
+<br>Power is also measured in Watts. One Watt equals one Joule per second.<br><br>Kilowatt hours are another common unit too.<br><br><br>Frequency is the number of repeating events that happen over a certain time frame. It is measured in Hertz ().<br>Period () is the amount of time it takes for an oscillating body to repeat itself. Period is inversely proportional to frequency.<br><br>Angular frequency () measures how quickly an object rotates around a circle. It is given using:<br><br>Angular frequency should not be confused with angular speed (which also has the same symbol as angular frequency).<br><br>In alternating current (AC), current changes. The change in current is similar to a sine wave.<br>Many different values are also related to this with respect to AC too.<br><br>where<br>
+<br>quantities with subscript 0 () are the "peak"
+<br>quantities without subscript 0 () are the instanteous versions of the variable
+<br> is voltage
+<br> is current
+<br> is power
+<br>Note that average power is<br><br><br>Root mean square (RMS) is a way to find the average or effective value of a varying quantity.<br>The RMS for  and  are<br><br>where<br>
+<br> is the peak current
+<br> is the peak voltage
+<br><br><br>Current density () is the electric current per unit area.<br>If the current density is uniform<br><br>where<br>
+<br> is the current
+<br> is the area
+<br>If the current density is not uniform:<br><br>The above equation is very similar to Gauss's Law. Interestingly,  points in the same direction as .<br><br>The electric field inside of a wire can be found using<br><br>where<br><br>
+<br> represents the conductivity of the material
+<br> represents resistivity of the material
+<br> is the current density
+<br> is the electric field
+<br><br>Free electrons moving through a conductor move in a zig-zag motion because they crash into many other electrons and protons in the wire. Luckily, we can calculate how fast they move on average. This average speed is called the net drift speed.<br>Net drift speed is found using<br><br>where<br>
+<br> is the net drift speed
+<br> is the current
+<br> is the area of a cross section of the wire
+<br> is the free charge density
+<br>You could also rewrite the above in terms of :<br><br>and since :<br><br>where  is the charge carried by a single electron or proton.<br><br>
+<br>Home: <a data-href="PHY 2049 - Physics 2 with Calculus" href="https://vomet.github.io/phy-2049-physics-2/phy-2049-physics-2-with-calculus.html" class="internal-link" target="_self" rel="noopener">PHY 2049 - Physics 2 with Calculus</a>
+<br>Previous: <a data-href="24 Capacitance - PHY 2049" href="https://vomet.github.io/phy-2049-physics-2/24-capacitance-phy-2049.html" class="internal-link" target="_self" rel="noopener">24 Capacitance - PHY 2049</a>
+<br>Next: <a data-href="26 DC Circuits - PHY 2049" href="https://vomet.github.io/26 DC Circuits - PHY 2049" class="internal-link" target="_self" rel="noopener">26 DC Circuits - PHY 2049</a>
+]]></description><link>https://vomet.github.io/phy-2049-physics-2/25-electric-current-and-resistance-phy-2049.html</link><guid isPermaLink="false">PHY 2049 - Physics 2/25 Electric Current and Resistance - PHY 2049.md</guid><dc:creator><![CDATA[Kevin D]]></dc:creator><pubDate>Tue, 04 Jun 2024 17:50:31 GMT</pubDate><enclosure url="https://vomet.github.io/lib/media/battery-circuit.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="https://vomet.github.io/lib/media/battery-circuit.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[PHY 2049 - Physics 2 with Calculus]]></title><description><![CDATA[ 
+ <br>Related:<br>
+Last modified: 2024-06-04 23:40:12<br><br><br>Physics 2 focuses on electricity, magnetism, and light.<br>Master doc: <a rel="noopener" class="external-link" href="https://docs.google.com/document/d/1sA3m-7x0kcKJQFa1SkN0O2mh0UmLZjsRpU8pbfQrE9I/edit" target="_blank">https://docs.google.com/document/d/1sA3m-7x0kcKJQFa1SkN0O2mh0UmLZjsRpU8pbfQrE9I/edit</a><br>Requirements<br>
+<br><a data-href="PHY 2048 - Physics 1 with Calculus" href="https://vomet.github.io/phy-2048-physics-1/phy-2048-physics-1-with-calculus.html" class="internal-link" target="_self" rel="noopener">PHY 2048 - Physics 1 with Calculus</a>
+<br>Physics 2 focuses on electricity, magnetism, and light.<br>
+<br><a data-href="21 Electric Charge - PHY 2049" href="https://vomet.github.io/phy-2049-physics-2/21-electric-charge-phy-2049.html" class="internal-link" target="_self" rel="noopener">21 Electric Charge - PHY 2049</a>
+<br><a data-href="22 Gauss's Law - PHY 2049" href="https://vomet.github.io/phy-2049-physics-2/22-gauss's-law-phy-2049.html" class="internal-link" target="_self" rel="noopener">22 Gauss's Law - PHY 2049</a>
+<br><a data-href="23 Electric Potential - PHY 2049" href="https://vomet.github.io/phy-2049-physics-2/23-electric-potential-phy-2049.html" class="internal-link" target="_self" rel="noopener">23 Electric Potential - PHY 2049</a>
+<br><a data-href="24 Capacitance - PHY 2049" href="https://vomet.github.io/phy-2049-physics-2/24-capacitance-phy-2049.html" class="internal-link" target="_self" rel="noopener">24 Capacitance - PHY 2049</a>
+<br><a data-href="25 Electric Current and Resistance - PHY 2049" href="https://vomet.github.io/phy-2049-physics-2/25-electric-current-and-resistance-phy-2049.html" class="internal-link" target="_self" rel="noopener">25 Electric Current and Resistance - PHY 2049</a>
+<br><a data-href="26 DC Circuits - PHY 2049" href="https://vomet.github.io/26 DC Circuits - PHY 2049" class="internal-link" target="_self" rel="noopener">26 DC Circuits - PHY 2049</a>
+<br><a data-href="27 Magnetism - PHY 2049" href="https://vomet.github.io/27 Magnetism - PHY 2049" class="internal-link" target="_self" rel="noopener">27 Magnetism - PHY 2049</a>
+<br><a data-href="28 Sources of Magnetic Fields - PHY 2049" href="https://vomet.github.io/28 Sources of Magnetic Fields - PHY 2049" class="internal-link" target="_self" rel="noopener">28 Sources of Magnetic Fields - PHY 2049</a>
+<br><a data-href="29 Induction and Faraday's Law - PHY 2049" href="https://vomet.github.io/29 Induction and Faraday's Law - PHY 2049" class="internal-link" target="_self" rel="noopener">29 Induction and Faraday's Law - PHY 2049</a>
+<br><a data-href="30 Inductance and EM Oscillations - PHY 2049" href="https://vomet.github.io/30 Inductance and EM Oscillations - PHY 2049" class="internal-link" target="_self" rel="noopener">30 Inductance and EM Oscillations - PHY 2049</a>
+<br><a data-href="31 Maxwell's Equations - PHY 2049" href="https://vomet.github.io/31 Maxwell's Equations - PHY 2049" class="internal-link" target="_self" rel="noopener">31 Maxwell's Equations - PHY 2049</a>
+<br><a data-href="32 Light, Reflection, and Refraction - PHY 2049" href="https://vomet.github.io/32 Light, Reflection, and Refraction - PHY 2049" class="internal-link" target="_self" rel="noopener">32 Light, Reflection, and Refraction - PHY 2049</a>
+<br><a data-href="33 Lenses and Optical Instruments - PHY 2049" href="https://vomet.github.io/33 Lenses and Optical Instruments - PHY 2049" class="internal-link" target="_self" rel="noopener">33 Lenses and Optical Instruments - PHY 2049</a>
+<br><a data-href="34 Wave Nature of Light - PHY 2049" href="https://vomet.github.io/34 Wave Nature of Light - PHY 2049" class="internal-link" target="_self" rel="noopener">34 Wave Nature of Light - PHY 2049</a>
+<br><br>This list contains all the commonly used constants used in Physics 2.<br>]]></description><link>https://vomet.github.io/phy-2049-physics-2/phy-2049-physics-2-with-calculus.html</link><guid isPermaLink="false">PHY 2049 - Physics 2/PHY 2049 - Physics 2 with Calculus.md</guid><dc:creator><![CDATA[Kevin D]]></dc:creator><pubDate>Wed, 05 Jun 2024 03:40:12 GMT</pubDate></item><item><title><![CDATA[Public Home Page]]></title><description><![CDATA[ 
+ <br>Related:<br>
+Last modified: 2024-06-05 13:27:53<br><br><br>Warning
 Please read this note before heading off to any other section.
 <br>👋 Hi there! You've stumbled across my notes page! Currently, this is a work in-progress.<br>Here's a list of things you can do to make your experience better:<br>
 <br>Make the theme light or dark using the button in the top left corner. This vault works best in light mode.
 <br>Navigate my files using the list on the left.
-<br>Currently, these notes contain everything I've learned in school. I plan to expand this later on to include other things like projects and such.<br>Feel free to browse any part of this vault. Personally, I think my best notes are the ones related to math.<br><br><br>I write all of these notes in a note-taking app called&nbsp;<a data-tooltip-position="top" aria-label="https://obsidian.md/" rel="noopener" class="external-link" href="https://obsidian.md/" target="_blank">Obsidian</a>. Obsidian uses a markup language called "Markdown." You can read more about it <a data-tooltip-position="top" aria-label="https://www.markdownguide.org/" rel="noopener" class="external-link" href="https://www.markdownguide.org/" target="_blank">here</a>.<br>After, I use&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/KosmosisDire/obsidian-webpage-export" rel="noopener" class="external-link" href="https://github.com/KosmosisDire/obsidian-webpage-export" target="_blank">Obsidian Webpage Export Plugin</a>&nbsp;to convert Markdown files into HTML files.<br>To replicate the look of this website in Obsidian:<br>
+<br>Currently, these notes contain everything I've learned in school. I plan to expand this later on to include other things like projects and such.<br>Feel free to browse any part of this vault. Personally, I think my best notes are the ones related to math.<br><br><br>I write all of these notes in a note-taking app called&nbsp;<a data-tooltip-position="top" aria-label="https://obsidian.md/" rel="noopener" class="external-link" href="https://obsidian.md/" target="_blank">Obsidian</a>. Obsidian uses a markup language called "Markdown." You can read more about it <a data-tooltip-position="top" aria-label="https://www.markdownguide.org/" rel="noopener" class="external-link" href="https://www.markdownguide.org/" target="_blank">here</a>.<br>After, I use&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/KosmosisDire/obsidian-webpage-export" rel="noopener" class="external-link" href="https://github.com/KosmosisDire/obsidian-webpage-export" target="_blank">Obsidian Webpage Export Plugin</a>&nbsp;to convert Markdown files into HTML files.<br>Then, I push these changes to a GitHub repository. That typically involves running these commands:<br>git add .
+# This will create a commit message based on the current day
+git commit -m "$(date '+%Y-%m-%d') update"
+git push origin main
+Copy<br>To replicate the look of this website in Obsidian:<br>
 <br>Font:&nbsp;<a data-tooltip-position="top" aria-label="https://fonts.google.com/specimen/Montserrat" rel="noopener" class="external-link" href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a>
 <br>Theme:&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/colineckert/obsidian-things" rel="noopener" class="external-link" href="https://github.com/colineckert/obsidian-things" target="_blank">Things</a>
 <br>Plugins
@@ -26,7 +729,22 @@ Please read this note before heading off to any other section.
 
 <br><br>I use a program called "LaTeX" (often stylistically written as ) to write math. To use LaTeX, surround your text with $$.<br>For example, for inline math, use<br>$3x+2$
 Copy<br>which renders<br><br>For block level math, use<br>$$3x+2$$
-Copy<br>which renders<br><br>LaTeX can render very complicated equations. Here's an example:<br><br>Moreover, you can use \begin{align} and \end{align} to properly align math along a certain value.<br>For example,<br><br>You can even make tables (though, Markdown already supports this).<br>]]></description><link>https://vomet.github.io/index.html</link><guid isPermaLink="false">index.md</guid><dc:creator><![CDATA[Kevin D]]></dc:creator><pubDate>Sat, 01 Jun 2024 22:43:53 GMT</pubDate></item><item><title><![CDATA[01 Limits - AP Calculus AB]]></title><description><![CDATA[ 
+Copy<br>which renders<br><br>LaTeX can render very complicated equations. Here's an example:<br><br>Moreover, you can use \begin{align} and \end{align} to properly align math along a certain value.<br>For example,<br><br>You can even make tables (though, Markdown already supports this).<br><br><br>If you mean boxes that look like these:<br>Info
+Here's some information for you.
+<br>Those are called "Callouts." Read more about them <a data-tooltip-position="top" aria-label="https://help.obsidian.md/Editing+and+formatting/Callouts" rel="noopener" class="external-link" href="https://help.obsidian.md/Editing+and+formatting/Callouts" target="_blank">here</a>.<br>The general format to render a Callout is:<br>&gt; [!example]
+&gt; This is an example.
+Copy<br>which would render<br>Example
+This is an example.
+]]></description><link>https://vomet.github.io/index.html</link><guid isPermaLink="false">index.md</guid><dc:creator><![CDATA[Kevin D]]></dc:creator><pubDate>Wed, 05 Jun 2024 17:27:53 GMT</pubDate></item><item><title><![CDATA[Contact]]></title><description><![CDATA[ 
+ <br><br>Welcome to my contact page! Currently, this is a work in-progress.<br>You can reach me at<br>
+<br>Personal: example [at] example [dot] com
+<br>Business: example [at] example [dot] com
+<br>Other: example [at] example [dot] com
+<br>Please replace [at] with @ and [dot] with ..<br>For example, if you have the following email:<br>example [at] example [dot] com
+Copy<br>the above would become<br>example@example.com
+Copy<br>Why do you use [at] and [dot]?
+There are bots all over the web trying to find emails. Using [at] and [dot] in place of @ and . provides some a small safeguard against these bots from finding my email.
+]]></description><link>https://vomet.github.io/contact.html</link><guid isPermaLink="false">Contact.md</guid><dc:creator><![CDATA[Kevin D]]></dc:creator><pubDate>Sat, 01 Jun 2024 22:32:40 GMT</pubDate></item><item><title><![CDATA[01 Limits - AP Calculus AB]]></title><description><![CDATA[ 
  <br>Related:<br>
 Last modified: 2024-05-31 08:02:56<br><br><br><br>Limits are like  values. They look like this:<br>That is read as "the limit of  as  approaches  is "<br>
 <br> is the variable we plug in (in calculus)
@@ -1784,383 +2502,7 @@ Copy<br>Programming process<br>
 <br>Run program with test data
 <br>Correct any errors. Repeat steps 5-8 as many times as necessary
 <br>Validate results
-<br>Procedural programming: focuses on process. Procedures/functions are written to process data<br>Object-oriented programming: focuses on data and ways to manipulate it]]></description><link>cop-2220-introduction-to-c++/01-intro-to-computers-and-programming-cop-2220.html</link><guid isPermaLink="false">COP 2220 - Introduction to C++/01 Intro to Computers and Programming - COP 2220.md</guid><pubDate>Fri, 19 Jan 2024 17:11:17 GMT</pubDate></item><item><title><![CDATA[02 Intro to C++]]></title><description><![CDATA[ 
- <br>Related:<br>
-Last modified: 2024-01-20 16:01:41<br><br><br>[TOC]<br><br>Special characters you should know:<br><br>The preprocessor reads the program before it is compiled. Any lines beginning in # will be executed first.<br>Multi-line comments<br>/*
-Multi-line comment begins here.
-
-Add anything in between.
-
-And ends here.
-*/
-Copy<br>Namespaces organize the names of program entities.<br>// Grabs the namespace called "std".
-using namespace std;
-Copy<br>Functions are used to group several statements together.<br>// Note that the data type of what the function returns must be stated too
-int main()
-{
-	cout &lt;&lt; "This is inside a function!\n";
-	cout &lt;&lt; "You can put in multiple lines and do multiple things inside one function!"
-	return 0;
-}
-Copy<br><br>Warning
-This section uses strings. Please include #include &lt;string&gt; at the beginning of your program to use strings.
-<br>cout is an object that displays output on the computer screen. For instance<br>// To use cout, you need to have these 3 lines:
-#include &lt;iostream&gt;
-#include &lt;string&gt;
-using namespace std;
-
-// cout must also be inside a function too
-int main()
-{
-	cout &lt;&lt; "Hello world!";
-}
-Copy<br>would display Hello world! on the screen.<br>You can also send more than one item to cout too.<br>#include &lt;iostream&gt;
-#include &lt;string&gt;
-using namespace std;
-
-// cout must also be inside a function too
-int main()
-{
-	cout &lt;&lt; "Hello" &lt;&lt; "world";
-	
-	// Or, you could do this too
-	cout &lt;&lt; "Hello ";
-	cout &lt;&lt; "world";
-}
-Copy<br>cout only outputs one line to the screen. To create a new line use endl or add \n in a string<br>#include &lt;iostream&gt;
-#include &lt;string&gt;
-using namespace std;
-
-int main()
-{
-  cout &lt;&lt; "Hello" &lt;&lt; endl;
-  cout &lt;&lt; "world" &lt;&lt; endl;
-
-  /* Outputs:
-  Hello
-  world
-  */
-
-  // You can use \n too
-  cout &lt;&lt; "Hello\n";
-  cout &lt;&lt; "world";
-
-  /* Outputs:
-  Hello
-  world
-  */
-}
-
-Copy<br>You can even print with variables.<br>#include &lt;iostream&gt;
-#include &lt;string&gt;
-using namespace std;
-
-int main()
-{
-	int number = 5;
-	cout &lt;&lt; "Number: " &lt;&lt; number;
-}
-Copy<br><br>#include inserts the contents of another file into the program. It is a preprocessor, so it's not part of C++. Do not put a ;.<br>For example, if you put in<br>#include &lt;iostream&gt;
-Copy<br>You are telling C++ to get a header file called iostream (which allows you to display stuff on the screen via cout).<br><br>Variables store stuff. They need a name and a type of data to hold. They also must be defined before they are used.<br>Here's an example:<br>int item;
-Copy<br>Literals are values written into the code. For instance "hello world" is a string literal and 12 could be an integer literal.<br><br>Identifiers is a programmer-defined name for some part of a program. Includes variables, functions, and more! These names should represent what the variable, function, or whatever does.<br>Naming rules for identifiers:<br>
-<br>First character must be a letter or an underscore
-<br>Use distinct names
-<br>No special characters
-<br>Key words are reserved words in C++ that cannot used as identifiers.<br><br>Variables of the same type can be defined on the same lines, if you want.<br>int length, width;
-
-int length;
-int width;
-
-// Both do the same thing.
-Copy<br>To assign variables, use the equals sign or enclose it in parentheses<br>int width;
-width = 12; // Assigns 12 to width
-
-// You can also initialize (assign a value when the variable is defined)
-int length = 12;
-
-// You can initialize multiple on one line too
-int depth = 13, height = 2, area;
-
-// Parentheses method
-int num(5);
-int num{5}; // in C++ 11 or higher. This will check if `5` is an int or not.
-Copy<br><br>There are two different types of numbers: integers and floats.<br>ints store whole numbers. But, you can make them store other numbers too.<br>// all the different integer types.
-int num;
-short num;
-long num;
-long long num;
-Copy<br>Numbers are stored as ints by default, if they are whole numbers. You can change this by appending L to the number. This might arise if you've defined a variable as something other than an int and you assign it an integer.<br>int num;
-num = 8;
-
-// You can also choose to store them as "long" by appending L
-num = 8L;
-
-// Or, store as "long long" with LL
-num = 8LL;
-
-// Constants that begin with '0' are base 8
-num = 075
-
-// Constants that begin wtih '0x' are base 16
-num = 0x75AB
-Copy<br>Integers can also be unsigned. This means they can only store positive values. To do this, add unsigned before the data type.<br><br>Floating points can hold decimals as well as whole numbers. They are all stored in a form similar to scientific notation and are signed too.<br>There are 3 types: float, double, and long double.<br><br>long double is as big as or bigger than double; double is as big as or bigger than float.<br>float number;
-number = 31.4;
-
-// You can also use E notation too
-number = 3.14E1;
-number = 3.14e1;
-
-// You can also force numbers to be a long double or float too
-number = 31.4f // float
-number = 31.4L // long double
-Copy<br>Warning
-If you're trying to assign a float to an int variable, the fractional part will be discarded.
-<br><br>Holds a single character or integer. They must be enclosed in single quotation marks (').<br>char letter;
-letter = 'C';
-
-// Warning! This will not work!
-letter = "C";
-Copy<br>Strings also hold characters. They must be enclosed with "". You also need to put #include &lt;string&gt; too.<br>#include &lt;string&gt; // Required if you want to use strings
-
-// Define string with "string"
-string name;
-name = "Bob";
-Copy<br>When strings are stored in a computer's memory, they have \0 appended to them. The \0 is called the "null terminator" and it signifies the end of a string.<br><br>Booleans are either true or false. To use them in C++, use bool.<br>bool finished;
-finished = false;
-Copy<br><br>sizeof() tells you how big a data type or variable is.<br>double price;
-cout &lt;&lt; "Memory size: " &lt;&lt; sizeof(price)
-cout &lt;&lt; "Double size: " &lt;&lt; sizeof(double)
-Copy<br><br>auto tells the compiler to determine the variable's data type automatically based on the initialization value. It works for all data types.<br>auto price = 30; // Turns into an int
-auto letter = 'D'; // Turns into a char
-Copy<br><br>Named constant (aka "constant variable") has data that cannot be changed during execution. They are usually written in uppercase letters.<br>const char GREETING = 'Hello';
-Copy<br><br>Scope: part of program where a variable can be accessed. Variables can't be used before they are defined.<br><br><br>A special note on division. If you divide two integers, you get back an integer. This can be problematic because there are situations where dividing two integers and gives a float instead. For example, you might . But, in C++,  would equal  if both terms were integers. To solve this, make one of the numbers into a float.<br>Here's a program to show you the differences:<br>#include &lt;iostream&gt;
-#include &lt;string&gt;
-using namespace std;
-
-int main() {
-  cout &lt;&lt; "This is what 5/2 looks like when you:" &lt;&lt; endl;
-  cout &lt;&lt; "\tDivide by two integers: " &lt;&lt; 5 / 2 &lt;&lt; endl;
-  cout &lt;&lt; "\tDivide by at least one float: " &lt;&lt; 5 / 2.0;
-  return 0;
-}
-Copy]]></description><link>cop-2220-introduction-to-c++/02-intro-to-c++-cop-2220.html</link><guid isPermaLink="false">COP 2220 - Introduction to C++/02 Intro to C++ - COP 2220.md</guid><pubDate>Sat, 20 Jan 2024 21:01:41 GMT</pubDate></item><item><title><![CDATA[03 Expressions and Interactivity]]></title><description><![CDATA[ 
- <br>Related:<br>
-Last modified: 2024-06-01 18:14:14<br><br><br>[TOC]<br><br>The cin object reads input from the keyboard. It requires #include &lt;iostream&gt; to work.<br>Here's what it looks like:<br>#include &lt;iostream&gt;
-using namespace std;
-
-int main() {
-  int age;
-
-  // `cout` asks the user a question. `cin` reads the user's input and
-  // automatically formats it to fit the variable.
-  cout &lt;&lt; "Age: ";
-  cin &gt;&gt; age;
-  cout &lt;&lt; endl;
-
-  // `cin` can even ask for more than one variable at a time.
-  float height, width, area;
-  cout &lt;&lt; "Enter 2 floats for the height and width. Press enter after each one.\n";
-  cin &gt;&gt; height &gt;&gt; width;
-  cout &lt;&lt; "Height: " &lt;&lt; height;
-  // cin &gt;&gt; height;
-  cout &lt;&lt; "Width: " &lt;&lt; width;
-  // cin &gt;&gt; width;
-
-  area = height * width;
-  cout &lt;&lt; "Area: " &lt;&lt; area;
-}
-Copy<br><br>Math can be done as a variable, cout, or other statements.<br>All math in C++ follows the <a data-href="Order of Operations" href="Order of Operations" class="internal-link" target="_self" rel="noopener">Order of Operations</a>.<br>Here's how to do common math expressions:<br>#include &lt;iostream&gt;
-#include &lt;string&gt;
-#include &lt;cmath&gt; // Required for exponents.
-using namespace std;
-
-int main() {
-  int a = 5;
-  int b = 3;
-
-  cout &lt;&lt; "A: " &lt;&lt; a &lt;&lt; endl;
-  cout &lt;&lt; "B: " &lt;&lt; b &lt;&lt; endl;
-
-  cout &lt;&lt; "Addition: " &lt;&lt; a + b &lt;&lt; endl;
-  cout &lt;&lt; "Subtraction: " &lt;&lt; a - b &lt;&lt; endl;
-  cout &lt;&lt; "Multiplication: " &lt;&lt; a * b &lt;&lt; endl;
-  
-  // static_cast&lt;float&gt;(a) sets `a` to a float
-  cout &lt;&lt; "Division (with floats): " &lt;&lt; static_cast&lt;float&gt;(a) / b &lt;&lt; endl;
-  cout &lt;&lt; "Modulus: " &lt;&lt; a % b &lt;&lt; endl;
-
-  // Exponents require #include &lt;cmath&gt;
-  cout &lt;&lt; "Exponents (A^B): " &lt;&lt; pow (a, b);
-}
-Copy<br><br>Hierarchy of number types in C++ (ranked by highest number they can hold; higher numbers first):<br>
-<br>long double
-<br>double
-<br>float
-<br>unsigned long
-<br>long
-<br>unsigned int
-<br>int
-<br>Type coercion: automatically converting one operand to another data type<br>
-<br>Promotion: converting the operand to a higher data type
-<br>Demotion: converting the operand to a lower data type
-<br>Rules of coercion:<br>
-<br>char, short, unsigned short are automatically promoted to int
-<br>When operating on values of different data types, the lower one is promoted to the type of the higher one.
-<br>When using the = operator, the expression on the right will be converted to the left expression's type
-<br><br>Variables can only store a set range of values. If a number goes outside this range, the number "wraps" around. For example, if the maximum value is 1000 and the minimum is 0 and you get a value like -1, it will "wrap around" and give you 1000.<br>Overflow vs. underflow:<br>
-<br>Overflow is when the assigned value is too big
-<br>Underflow is when the assigned value is too small
-<br><br>Type casting manually changes a data's type. This can be useful, especially when dividing.<br>#include &lt;iostream&gt;
-using namespace std;
-
-int main() {
-  int pay = 10;
-  int hours_worked = 4;
-
-  // This will give you the correct answer: 2.5
-  cout &lt;&lt; "Hourly Wage: " &lt;&lt; static_cast&lt;float&gt;(pay) / hours_worked &lt;&lt; endl;
-
-  // Other methods. static_cast is still preferred
-  cout &lt;&lt; float(pay) / hours_worked &lt;&lt; endl;
-  cout &lt;&lt; (float)pay / hours_worked &lt;&lt; endl;
-  
-  // Bear in mind though that this will give you 2.0. It divides to give 2, then turns 2 into a float
-  cout &lt;&lt; static_cast&lt;float&gt;(pay / hours_worked)
-}
-Copy<br><br>You can assign multiple variables to one variable.<br>#include &lt;iostream&gt;
-// Makes x, y, and z equal 5
-x = y = z = 5;
-
-cout &lt;&lt; x &lt;&lt; endl;
-cout &lt;&lt; y &lt;&lt; endl;
-cout &lt;&lt; z &lt;&lt; endl;
-Copy<br>Combined assignment is where you take a variable and perform some operation with another number to itself. Usually, they look like this:<br>#include &lt;iostream&gt;
-
-int main ()
-{
-	int x = 5;
-	
-	// Adding 4 to x
-	x = x + 4;
-	x += 4;
-	
-	cout &lt;&lt; x;
-	
-	// Subtracts 3 from x
-	x = x - 3;
-	x -= 3;
-	
-	// Multiply x by 10
-	x = x * 10;
-	x *= 10;
-	
-	// Divide x by 5
-	x = x / 5;
-	x /= 5;
-	
-	// Finds remainder after dividing x by 7
-	x = x % 7;
-	x %= 7;
-}
-Copy<br><br>The iomanip header file helps you control how data is outputted. For example, you can use it to output only a certain number of decimal points.<br><br>setw() lets you set a fixed minimum number of characters for your output. This is useful if you want to make tables.<br>For example, this program<br>#include &lt;iomanip&gt; // Required for setw()
-#include &lt;iostream&gt; // Required for displaying output
-
-int main ()
-{
-	int value = 42;
-	cout &lt;&lt; "[" &lt;&lt; setw(5) &lt;&lt; value &lt;&lt; "]";
-}
-Copy<br>outputs<br>[   42]
-Copy<br>Notice that there are 3 spaces between [ and 42. This is because 42 only has 2 characters and requires 3 spaces for it to have 5 characters in total.<br>If the value in setw() is less than the output, no spaces will be outputted.<br>For example, this program<br>#include &lt;iomanip&gt;
-#include &lt;iostream&gt;
-
-int main ()
-{
-	int value = 12345;
-	cout &lt;&lt; "[" &lt;&lt; setw(3) &lt;&lt; value &lt;&lt; "]";
-}
-Copy<br>outputs<br>[12345]
-Copy<br><br>setprecision() rounds your output to a certain number of significant figures.<br>#include &lt;iostream&gt;
-#include &lt;iomanip&gt;
-using namespace std;
-
-int main () {
-	float pi = 3.14159265
-	cout &lt;&lt; setprecision(5) &lt;&lt; pi &lt;&lt; endl;
-	cout &lt;&lt; setprecision(4) &lt;&lt; pi &lt;&lt; endl;
-	cout &lt;&lt; setprecision(3) &lt;&lt; pi &lt;&lt; endl;
-	cout &lt;&lt; setprecision(2) &lt;&lt; pi &lt;&lt; endl;
-	cout &lt;&lt; setprecision(1) &lt;&lt; pi &lt;&lt; endl;
-}
-Copy<br>outputs<br>3.1416
-3.142
-3.14
-3.1
-3
-Copy<br>It's important to note that setprecision(x) outputs x-1 significant figures.<br><br>fixed forces cout to print a certain number of digits.<br><br>showpoint shows trailing zeroes if there aren't enough significat figures in the decimal<br><br>The problem with using cin is that it ignores things like spaces and tabs. To fix this, use getline(). It reads an entire line of input.<br>#include &lt;iostream&gt;
-#include &lt;string&gt;
-using namespace std;
-
-int main() {
-  string name;
-  string city;
-
-  // Now you can input your first and last name.
-  cout &lt;&lt; "Name: ";
-  getline(cin, name);
-  
-  // You can input city names with spaces
-  cout &lt;&lt; "\nCity: ";
-  getline(cin, city);
-  
-  cout &lt;&lt; endl;
-  cout &lt;&lt; name &lt;&lt; endl;
-  cout &lt;&lt; city;
-}
-Copy<br>cin.get() will read the next character. This is useful if you want to make a program say "Enter a key to continue."<br>#include &lt;iostream&gt;
-using namespace std;
-
-char ch;  
-cout &lt;&lt; "Strike any key to continue";  
-cin &gt;&gt; ch;
-
-// cin can also be set to ignore characters
-cin.ignore(); // ignore next character
-int x = 3;
-cin.ignore(x, '\n'); // ignore `x` number of characters or until a '\n' is received
-Copy<br>Strings<br>// Find length of string
-string state = "Texas";  
-int size = state.length();
-
-// Concatenation
-string city = "Austin";
-string country = "USA";
-
-string location = city + state;
-string location += country;
-Copy<br>setw() sets the width for output. It will add additional spaces if your variable doesn't have enough characters. If there are too many, it will cut some off.<br>cin.ignore() ignores the next character that is pressed. cin.ignore(x) ignores the next x characters that are pressed.<br><br>cmath is a library that helps you do math. Use #include &lt;cmath&gt; to use it.<br>#include &lt;iostream&gt;
-#include &lt;cmath&gt;
-
-int main() {
-    // Calculate square root
-    double num = 25.0;
-    double sqrtResult = std::sqrt(num);
-    std::cout &lt;&lt; "Square root of " &lt;&lt; num &lt;&lt; " is: " &lt;&lt; sqrtResult &lt;&lt; std::endl;
-
-    // Calculate sine
-    double angleInDegrees = 45.0;
-    double angleInRadians = angleInDegrees * M_PI / 180.0; // Convert degrees to radians
-    double sineResult = std::sin(angleInRadians);
-    std::cout &lt;&lt; "Sine of " &lt;&lt; angleInDegrees &lt;&lt; " degrees is: " &lt;&lt; sineResult &lt;&lt; std::endl;
-
-    // Calculate logarithm
-    double logValue = 100.0;
-    double logResult = std::log10(logValue);
-    std::cout &lt;&lt; "Logarithm base 10 of " &lt;&lt; logValue &lt;&lt; " is: " &lt;&lt; logResult &lt;&lt; std::endl;
-
-    return 0;
-}
-Copy<br>&lt;cstdlib&gt; contains functions for random numbers and &lt;ctime&gt; contains functions for time.<br><br>Act like you're a computer executing the program. Take things step-by-step. This is useful for finding errors.]]></description><link>cop-2220-introduction-to-c++/03-expressions-and-interactivity-cop-2220.html</link><guid isPermaLink="false">COP 2220 - Introduction to C++/03 Expressions and Interactivity - COP 2220.md</guid><pubDate>Sat, 01 Jun 2024 22:14:14 GMT</pubDate></item><item><title><![CDATA[04 Making Decisions - COP 2220]]></title><description><![CDATA[ 
+<br>Procedural programming: focuses on process. Procedures/functions are written to process data<br>Object-oriented programming: focuses on data and ways to manipulate it]]></description><link>cop-2220-introduction-to-c++/01-intro-to-computers-and-programming-cop-2220.html</link><guid isPermaLink="false">COP 2220 - Introduction to C++/01 Intro to Computers and Programming - COP 2220.md</guid><pubDate>Fri, 19 Jan 2024 17:11:17 GMT</pubDate></item><item><title><![CDATA[04 Making Decisions - COP 2220]]></title><description><![CDATA[ 
  <br>Related:<br>
 Last modified: 2024-01-28 12:30:40<br><br><br>[TOC]<br>In C++, if statements are written like this:<br>#include &lt;string&gt;
 #include &lt;iostream&gt;
@@ -2252,111 +2594,7 @@ Copy<br>switch is best for menu-driven programs. Menu-driven programs<br>
 <br>not a good idea
 
 
-]]></description><link>cop-2220-introduction-to-c++/04-making-decisions-cop-2220.html</link><guid isPermaLink="false">COP 2220 - Introduction to C++/04 Making Decisions - COP 2220.md</guid><pubDate>Sun, 28 Jan 2024 17:30:40 GMT</pubDate></item><item><title><![CDATA[05 Loops - COP 2220]]></title><description><![CDATA[ 
- <br>Related:<br>
-Last modified: 2024-02-09 19:08:17<br><br><br>[TOC]<br><br>++ increments by one. In other words, it adds 1.<br>-- decrements by one. In other words, it subtracts 1.<br>#include &lt;iostream&gt;
-
-int main () {
-	int val = 0;
-	
-	// All of the following add 1 to `val`.
-	val = val + 1;
-	val += 1;
-	val++;
-	++val;
-	
-	// All of the following subtract 1 from `val`.
-	val = val - 1;
-	val -= 1;
-	val--;
-	--val;
-	
-	cout &lt;&lt; val;
-}
-Copy<br>In prefix mode (example: --val, ++val), the variable is incremented then returned.<br>In postfix mode (example: val--, val++), the variable is returned then incremented.<br>This can have an impact on your program!<br>Increments<br>
-<br>may be used in expressions (i.e. ++num + val--;)
-<br>must have some location in memory
-<br>can be used in relational expressions (i.e. ++num &lt; val)
-<br><br>Loops repeatedly run a section of code.<br>While loops execute a section of statements until the expression is false.<br>while (expression) {
-	statement;
-}
-Copy<br>Be careful of creating infinite loops. It can crash your system.<br>While loops can be used for input validation. This is because they execute the same lines of code until the user inputs a valid choice (which makes the expression false).<br>Counter: variable that is incremented or decremented every time the loop executes code.<br><br>do-while: execute the loop, then test the expression.<br>do {
-	statement;
-} while (expression);
-Copy<br>do-while executes the statement at least once. This also makes them good for menu-driven programs.<br><br>for(initialization; test; update)  
-{
-	statement;
-}
-Copy<br>
-<br>initialization  assigns a variable to something. You can initialize multiple if you wish. Separate them using a ,.
-
-<br>example: for(x=1, y=1; test; update)
-<br>may be omitted. Just add a ;.
-
-<br>example: for(; x&lt;5; x++)
-
-
-
-
-<br>test tests an expression.
-
-<br>If it's true, it will execute the loop again.
-<br>If false, break out of the loop
-
-
-<br>update: executed if test is true. You can update multiple variables if you want
-
-<br>example: for(x=1; x&lt;5; x++, y++)
-
-
-<br>Use for loops when there is:<br>
-<br>an initialization  
-<br>a false condition to stop the loop  
-<br>an update to occur at the end of each iteration
-<br><br>Sentinels terminate input. This is useful when you don't know how many values the user to input but you still want a way for the program to quit.<br><br>Nested loops are when loops are inside other loops.<br><br>To store files using your program:<br>
-<br>Open the file
-<br>Use the file
-<br>Close the file
-<br>#include &lt;fstream&gt; is used for file access.<br>
-<br>ifstream accepts input
-<br>ofstream outputs to file
-<br>fstream does input and output
-<br>To define file stream objects<br>#include &lt;fstream&gt;
-#include &lt;iostream&gt;
-#include &lt;string&gt;
-
-// Defining file stream objects
-ifstream input_file;
-ofstream output_file;
-fstream file;
-
-// Open files
-input_file.open("input.txt");
-output_file.open("output.txt");
-file.open("input_and_output.txt");
-
-// Sending output to a file
-output_file &lt;&lt; "Sending output to a file";
-
-// Sending file input to variables
-string input, string input_2, string input_3;
-input_file &gt;&gt; input;
-
-// You can even copy input to multiple variables
-input_file &gt;&gt; input_2 &gt;&gt; input_3;
-
-/*
-- If file input was accepted successfully, `&gt;&gt;` will output true.
-- If file input was not accepted successfully, `&gt;&gt;` will output false
-
-This is useful for error handling.
-*/
-
-// Close files when you're finished.
-input_file.close();
-output_file.close();
-file.close();
-Copy<br><br>break lets you break out of a loop. Use it sparingly because it makes code harder to read.<br>continue jumps straight to the end of the loop and prepares for the next iteration. It skips the rest of the code. Just like break, use it sparingly because it makes code hard to read.]]></description><link>cop-2220-introduction-to-c++/05-loops-cop-2220.html</link><guid isPermaLink="false">COP 2220 - Introduction to C++/05 Loops - COP 2220.md</guid><pubDate>Sat, 10 Feb 2024 00:08:17 GMT</pubDate></item><item><title><![CDATA[06 Functions - COP 2220]]></title><description><![CDATA[ 
+]]></description><link>cop-2220-introduction-to-c++/04-making-decisions-cop-2220.html</link><guid isPermaLink="false">COP 2220 - Introduction to C++/04 Making Decisions - COP 2220.md</guid><pubDate>Sun, 28 Jan 2024 17:30:40 GMT</pubDate></item><item><title><![CDATA[06 Functions - COP 2220]]></title><description><![CDATA[ 
  <br>Related:<br>
 Last modified: 2024-02-29 14:49:10<br><br><br>[TOC]<br>Modular programming: break up a program into many smaller functions.<br>
 <br>easy to maintain
@@ -4415,43 +4653,7 @@ To integrate quickly on a TI-84 Calculator:
 <br><a data-href="08 Integration Techniques and Improper Integrals - MAC 2312" href="mac-2312-calculus-2/08-integration-techniques-and-improper-integrals-mac-2312.html" class="internal-link" target="_self" rel="noopener">08 Integration Techniques and Improper Integrals - MAC 2312</a>
 <br><a data-href="09 Infinite Series - MAC 2312" href="mac-2312-calculus-2/09-infinite-series-mac-2312.html" class="internal-link" target="_self" rel="noopener">09 Infinite Series - MAC 2312</a>
 <br><a data-href="10 Conics, Parametric Equations, and Polar Coordinates - MAC 2312" href="mac-2312-calculus-2/10-conics,-parametric-equations,-and-polar-coordinates-mac-2312.html" class="internal-link" target="_self" rel="noopener">10 Conics, Parametric Equations, and Polar Coordinates - MAC 2312</a>
-]]></description><link>mac-2312-calculus-2/mac-2312-calculus-2-with-analytic-geometry.html</link><guid isPermaLink="false">MAC 2312 - Calculus 2/MAC 2312 - Calculus 2 with Analytic Geometry.md</guid><pubDate>Fri, 31 May 2024 19:23:20 GMT</pubDate></item><item><title><![CDATA[12 Vectors and the Geometry of Space - MAC 2313]]></title><description><![CDATA[ 
- <br>Related: <a data-href="MAC 2313 - Calculus 3 with Analytical Geometry" href="mac-2313-calculus-3/mac-2313-calculus-3-with-analytical-geometry.html" class="internal-link" target="_self" rel="noopener">MAC 2313 - Calculus 3 with Analytical Geometry</a><br><br><br><br>Points in 3 dimension are represented as:<br><br>or<br><br>where , , and  represent how far one must go in the respective dimension and  is the th point that you're trying to represent.<br>Example
- tells you to move:
-
-<br> units in the  dimension
-<br> units in the  dimension
-<br> units in the  dimension
-
-<br>
-<br>The  plane exists where 
-<br>The  plane exists where 
-<br>The  plane exists where 
-<br><br>An octant is like a quadrant but for 3 dimensions. It is&nbsp;one of eight regions divided by the coordinate axes.<br>For example, octant I (one) contains only positive , , and  values.<br>This table summarizes the values you might find in each octant.<br><br>Note that octants are denoted by Roman numerals.<br><br>The standard equation of a sphere is given by:<br><br>The sphere is centered at  and has a radius of .<br><br>Vectors have magnitude and direction.<br>
-<br>Direction tells you where the vector is pointing.
-<br>Magnitude tells you how long a vector is.
-<br>To denote that a variable is a vector, put an arrow on top of it. For example,  is essentially "vector ". Vectors may also be written as bolded letters. This means  may be written as .<br>Vectors can be written as:<br><br>You can also write them in terms of <a data-href="#Unit Vectors" href="about:blank#Unit_Vectors" class="internal-link" target="_self" rel="noopener">Unit Vectors</a> using <a data-href="#Vector Components" href="about:blank#Vector_Components" class="internal-link" target="_self" rel="noopener">Vector Components</a>:<br><br>Moreover, you can write them in terms of magnitude and direction:<br><br>where  is the direction.<br>The same can also be done using <a data-href="#Unit Vectors" href="about:blank#Unit_Vectors" class="internal-link" target="_self" rel="noopener">Unit Vectors</a>:<br><br>where  is the unit vector.<br><br>To find the magnitude of a vector, use the following:<br><br><br>A vector component is a projection of a vector onto a specific axis or direction. To denote a vector component, add a subscript and the dimension for which the vector is projected onto.<br>Example
-Suppose  has a length of , faces , and is defined on a 2D Cartesian coordinate plane.
-If you want to find  component, you'd need to use .
-
-And for its  component, use .
-
-<br><br>Unit vectors have a length of  and face the same direction as the vector they represent.<br>To find the magnitude and direction of a unit vector:<br><br>where  is the unit vector of vector .<br><br>The standard unit vectors are:<br><br>Vectors can be represented in terms of unit vectors like this:<br><br>Or, you can bold , , and  instead:<br>
-<br><br>Related: <a data-href="Dot Product" href="other-math/dot-product.html" class="internal-link" target="_self" rel="noopener">Dot Product</a><br>The&nbsp;dot&nbsp;product&nbsp;tells you what amount of one&nbsp;vector&nbsp;goes in the direction of another.<br>Let  and . The dot product of  and  would then be:<br><br>Interestingly,<br><br>Additionally:<br><br>It should be important to note that<br><br><br>The scalar component of  in the direction of  is:<br><br>The notation  represents the projection of vector  onto vector . This projection is a vector that is parallel to  and represents the component of  that lies in the direction of .<br><br>The distance from the tip of  (which we will call point ) to closest point on  (which we will call ) is:<br><br>Here's what that looks like:<br><img alt="Vector Projection.svg" src="lib/media/vector-projection.svg"><br><br>Related: <a data-href="Cross Product" href="other-math/cross-product.html" class="internal-link" target="_self" rel="noopener">Cross Product</a><br>The cross product of  and  is:<br><br>Interestingly,  gives you the area of a parallelogram with  and  as its sides.<br><br>where  is defined as:<br><br>or, the th term in  dimensions for .<br>The cross product is related to :<br>
-<br>The cross product creates a vector orthogonal to  and .<br>Torque is the cross product of radius and force:<br><br><br>The box product of  and  is:<br><br>Note that<br><br><br> and  are perpendicular if<br><br> and  are parallel if<br><br><br>Suppose that<br><br>and  is located at .<br>Then the parametric equations for  are<br><br>where  is the parameter.<br>You can use these properties to construct parametric equations for a vector given a point. You can also find a vector and a point given parametric equations too.<br><br>Suppose a flat plane is defined in 3D as:<br><br>Then, the plane will intercept these 3 points:<br><br>Additionally, a vector perpendicular to this plane is defined as:<br><br>Example
-Find the intercepts of this plane:
-
-The intercepts can be found using:
-
-Therefore, the plane intersects these points:
-
-And finally, a vector perpendicular to the plane is:
-
-<br>The equation for a plane passing through  and is normal  is:<br><br><br>Cylindrical surfaces are like curved planes. It would be like taking a function defined on the  (or ) and extending it out into 3D (or along the  axis).<br>You can use conics to create ellipses, hyperbolas, parabolas, and circles. See <a data-href="10 Conics, Parametric Equations, and Polar Coordinates - MAC 2312" href="mac-2312-calculus-2/10-conics,-parametric-equations,-and-polar-coordinates-mac-2312.html" class="internal-link" target="_self" rel="noopener">10 Conics, Parametric Equations, and Polar Coordinates - MAC 2312</a> for more information.<br><br>
-<br>Home: <a data-href="MAC 2313 - Calculus 3 with Analytical Geometry" href="mac-2313-calculus-3/mac-2313-calculus-3-with-analytical-geometry.html" class="internal-link" target="_self" rel="noopener">MAC 2313 - Calculus 3 with Analytical Geometry</a>
-<br>Next: <a data-href="13 Vector-Valued Functions and Motion in Space - MAC 2313" href="mac-2313-calculus-3/13-vector-valued-functions-and-motion-in-space-mac-2313.html" class="internal-link" target="_self" rel="noopener">13 Vector-Valued Functions and Motion in Space - MAC 2313</a>
-]]></description><link>mac-2313-calculus-3/12-vectors-and-the-geometry-of-space-mac-2313.html</link><guid isPermaLink="false">MAC 2313 - Calculus 3/12 Vectors and the Geometry of Space - MAC 2313.md</guid><pubDate>Fri, 31 May 2024 12:17:01 GMT</pubDate><enclosure url="lib/media/vector-projection.svg" length="0" type="image/svg+xml"/><content:encoded>&lt;figure&gt;&lt;img src="lib/media/vector-projection.svg"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[13 Vector-Valued Functions and Motion in Space - MAC 2313]]></title><description><![CDATA[ 
- <br>Related: <br><br><br><br>Let a  be a curve that is defined by the following parametric equations:<br><br>The curve traced by  is smooth if  is continuous and never 0.<br> is typically called the "position vector." For velocity and acceleration:<br><br>Speed is found using:<br><br>or, the magnitude of .]]></description><link>mac-2313-calculus-3/13-vector-valued-functions-and-motion-in-space-mac-2313.html</link><guid isPermaLink="false">MAC 2313 - Calculus 3/13 Vector-Valued Functions and Motion in Space - MAC 2313.md</guid><pubDate>Fri, 31 May 2024 12:21:57 GMT</pubDate></item><item><title><![CDATA[MAC 2313 - Calculus 3]]></title><description><![CDATA[ 
+]]></description><link>mac-2312-calculus-2/mac-2312-calculus-2-with-analytic-geometry.html</link><guid isPermaLink="false">MAC 2312 - Calculus 2/MAC 2312 - Calculus 2 with Analytic Geometry.md</guid><pubDate>Fri, 31 May 2024 19:23:20 GMT</pubDate></item><item><title><![CDATA[MAC 2313 - Calculus 3]]></title><description><![CDATA[ 
  <br>Related: <br><br><br><br>Tip
 Use <a rel="noopener" class="external-link" href="https://desmos.com/3d/" target="_blank">https://desmos.com/3d/</a> to visualize the 3rd dimension.
 <br>
@@ -4842,118 +5044,7 @@ Last modified: 2024-05-31 07:59:37<br><br><br>[TOC]<br>Physics 1 focuses on mech
 <br><br>
 <br>Home: <a data-href="PHY 2049 - Physics 2 with Calculus" href="phy-2049-physics-2/phy-2049-physics-2-with-calculus.html" class="internal-link" target="_self" rel="noopener">PHY 2049 - Physics 2 with Calculus</a>
 <br>Next: <a data-href="22 Gauss's Law - PHY 2049" href="phy-2049-physics-2/22-gauss's-law-phy-2049.html" class="internal-link" target="_self" rel="noopener">22 Gauss's Law - PHY 2049</a>
-]]></description><link>phy-2049-physics-2/21-electric-charge-phy-2049.html</link><guid isPermaLink="false">PHY 2049 - Physics 2/21 Electric Charge - PHY 2049.md</guid><pubDate>Fri, 31 May 2024 19:12:40 GMT</pubDate><enclosure url="lib/media/electric-field-lines.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib/media/electric-field-lines.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[22 Gauss's Law - PHY 2049]]></title><description><![CDATA[ 
- <br>Related: <br><br><br>Gauss's Law is best applied on symmetrical objects. It is faster than using Coulomb's Law.<br><br>Electric flux is the electric field passing through a given area. <br>One way to conceptually imagine electric flux is to imagine a point charge shooting bullets out. The number of bullets the field catches at the edge is the amount of flux in the area.<br>For a uniform electric field with flat area:<br><br>where  is the electric field and  is the area.<br>To measure electric flux for non-uniform electric fields with curved areas:<br><br>Bear in mind that  is a dot product.<br>Example
-Find the electric flux for a point charge in the center of a sphere.
-Firstly, we know that
-
- is constant throughout, so we can take it out of the integral:
-
-Note that  isn't always constant!
-We can rewrite  thanks to Coulomb's Law to get:
-
-The total surface area of a sphere is , so:
-
-<br>Believe it or not, the answer from the example above is important for defining Gauss's Law.<br><br>Gauss's Law states that the electric flux through a closed surface is:<br><br>where<br>
-<br> is the charge
-<br> and is the permittivity of free space
-<br> is the electric field
-<br> is the area
-<br>Why is there a circle in the integral?
-The circle is used to signify that it is a "contour integral". Contour integrals calculate how the function behaves along a closed path. They are also used when looking at the complex plane.
-<br>This means that no matter the shape of the field,  will always remain the same.<br>Also, if any point charge is located outside of the electric field, the net flux will be 0.<br>For  number of charges:<br><br><br>The electric field  units away from the center of a spherically symmetric charge distribution is:<br><br>Interestingly, we just derived Coulomb's Law using Gauss's Law.<br><br>A continuous charge distribution can exist along a line, surface area, or volume of charge. Note that these each use different variables:<br><br>Charge distributions describe how a charge is distributed in space and how it can change over that space.<br>The equations for a continuous charge distribution are:<br><br>It should be important to note that these integrals can be broken down into  and  components.<br><br>The linear charge density is:<br><br>where  is the charge and  is the length.<br>The surface charge density is:<br><br>where  is the charge and  is the area.<br>The volume charge density is:<br><br>where  is the charge and  is the volume.<br><br>The field between 2 parallel plate capacitors is<br><br>where  is the surface charge density and  is the permittivity of free space.<br>Note that nothing can be in between the two parallel plate capacitors.<br>The field outside of this specific area (in other words, not in between the two capacitors) is 0.<br><br>The electric field near any non-conducting surface is:<br><br>The electric field near any conducting surface is:<br><br>Notice how the electric field near a conducting surface is twice as big compared to an electric field near a non-conducting surface.]]></description><link>phy-2049-physics-2/22-gauss's-law-phy-2049.html</link><guid isPermaLink="false">PHY 2049 - Physics 2/22 Gauss's Law - PHY 2049.md</guid><pubDate>Sat, 01 Jun 2024 18:11:02 GMT</pubDate></item><item><title><![CDATA[23 Electric Potential - PHY 2049]]></title><description><![CDATA[ 
- <br>Related: <br><br><br>Electric Potential vs. Electric Potential Energy
-Electric potential is the amount of work needed to move a point charge from one location to another. It is measured in Volts.
-Electric potential energy is the energy a body has due to its position in the electric field. It is measured in Joules. 
-<br><br>A volt measures the electric potential between two points. It is defined as<br><br>where<br>
-<br> is the potential energy
-<br> is the charge
-<br>One volt equals one Joule per Coulomb.<br><br>To find the work done by electric potential:<br><br>where<br>
-<br> is the charge
-<br> is the electric field
-<br> is displacement
-<br>This also means that<br><br><br>Potential inside a conductor is constant throughout.<br><br>How charges move:<br>
-<br>Positive charges move from higher potential to lower potential.
-<br>Negative charges move from lower potential to higher potential.
-<br>The potential energy of a positively charged particle is higher at points of higher potential and lower at points of lower potential.
-<br>Both positive and negative charges gain potential when moving to spaces of higher potential energy.<br><br>Potential difference is defined as:<br><br>and is measured in Volts.<br>In other words, potential difference is change in potential energy ().<br>Work is equal to:<br>
-<br>An electric field points wherever potential energy decreases the quickest.<br><br>Because , this is also true:<br><br>When a positive charge is placed into a field, going closer increases . Going away decreases it.<br>When a negative charge is placed into a field, going closer decreases . Going away increases it.<br>For both positive and negative charges, moving in the direction of an electric field decreases .<br><br>For any continuous charge distribution:<br><br>where  is the distance from a certain point to the charge distribution,  is the charge, and .<br><br>The units for potential difference are Volts (). One Volt is equal to one Joule per Coulomb ().<br>The unit of the electric field is either Newtons per Coulomb () or Volt per metre ().<br><br>For point charges<br><br>This means that .<br>You can generalize this using the principle of superposition to get:<br><br>for  number of point charges.<br>It should be important to note that the above equality is not a vector sum.<br>To solve:<br>
-<br>Draw a diagram
-<br>Calculate the distances for each point charge
-<br>Use .
-
-<br>Use positive values if the charge is positive; use negative values if the charge is negative
-
-
-<br>Use the superposition principle for multiple charges
-<br><br>If two point charges in an electric field have the same sign, positive work is being done because they repel each other.<br>If two point charges in an electric field have different signs, work is required to hold them back because they are attracted to one another.<br>The potential due to a dipole is defined as<br><br>If you let  and :<br><br>which can be rewritten as<br><br>where <br>
-<br> is the dipole moment
-<br> is the charge 
-<br> is the distance between the charges
-<br>
-<br> is the angle
-<br><br>Equipotential surfaces are surfaces where all points have the same potential.<br>The electric field is related to electric potential like so:<br><br>where , , and  are unit vectors.<br><br><br><img alt="Equipotential Lines.png" src="lib/media/equipotential-lines.png"><br><br>The electron volt is an energy unit for electrons and protons. It is presented using .<br><br>In other words, one electron volt is equal to  Joules.]]></description><link>phy-2049-physics-2/23-electric-potential-phy-2049.html</link><guid isPermaLink="false">PHY 2049 - Physics 2/23 Electric Potential - PHY 2049.md</guid><pubDate>Fri, 31 May 2024 18:41:07 GMT</pubDate><enclosure url="lib/media/equipotential-lines.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib/media/equipotential-lines.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[24 Capacitance - PHY 2049]]></title><description><![CDATA[ 
- <br>Related: <br><br><br>Capacitors transfer electron charges. This transfer stops when the voltage from the capacitor is the same as the battery (). Additionally, electrons flow from the positive plate to the negative plate.<br><br>Capacitance is the capability of an object to store electric charge.<br>Capacitance is found using:<br><br>where<br>
-<br> is the charge
-<br> is change in potential
-<br>This also means that<br><br>It can also be rewritten as<br><br>where<br>
-<br> is the area
-<br>
-<br> is the diameter or distance between the parallel plates
-<br>Capacitance is measured in Farads (). One Farad is equal to one Coulomb per Volt.<br><br>You will often see Farads as  or . They are small units.<br>Capacitors are drawn as:<br><img alt="Capacitor Symbol.png" src="lib/media/capacitor-symbol.png" style="width: 500px; max-width: 100%;"><br>This image was retrieved from Wikimedia Commons: <a rel="noopener" class="external-link" href="https://commons.wikimedia.org/wiki/File:Capacitor_simbolo.png" target="_blank">https://commons.wikimedia.org/wiki/File:Capacitor_simbolo.png</a>.<br>If parallel plate capacitors are only separated by air:<br><br>where<br>
-<br> is the charge
-<br>
-<br> is the area of one capacitor
-<br>Potential is measured using<br><br><br>If capacitors are parallel to each other in a circuit, then the total capacitance is<br><br>for  parallel capacitors.<br><br><br>This would mean that energy is stored as<br><br>Note that any of the above formulas are correct.<br>The energy stored in a capacitor is<br><br>where<br>
-<br>
-<br> is the electric field
-<br> is the area
-<br> is the diameter or separation thickness between the parallel plates
-<br><br>Dielectrics are insulating material placed in between the parallel plates of a capacitor.<br><img alt="Dielectric.png" src="lib/media/dielectric.png"><br>The above image was retrieved from Wikipedia: <a rel="noopener" class="external-link" href="https://en.wikipedia.org/wiki/File:Capacitor_schematic_with_dielectric.svg" target="_blank">https://en.wikipedia.org/wiki/File:Capacitor_schematic_with_dielectric.svg</a><br>Dielectrics affect capacitance. They are represented as  in many equations.  is known as the "dielectric constant".<br>The relationship between variables is listed below (with and without ).<br><br>where variables marked with subscript 0 are considered "initial values" without the dielectric. For example,  represents capacitance without a dielectric while  represents capacitance with a dielectric.<br>More simply:<br><br>Energy density () tells you how much energy is stored in a certain amount of volume.<br><br>Note also that<br><br>And<br><br>where<br>
-<br> is the potential energy
-<br> is volume, not voltage
-]]></description><link>phy-2049-physics-2/24-capacitance-phy-2049.html</link><guid isPermaLink="false">PHY 2049 - Physics 2/24 Capacitance - PHY 2049.md</guid><pubDate>Sat, 01 Jun 2024 19:15:13 GMT</pubDate><enclosure url="lib/media/capacitor-symbol.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib/media/capacitor-symbol.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[25 Electric Current and Resistance]]></title><description><![CDATA[ 
- <br>Related: <br><br><br><br>Batteries store energy. They are represented like this:<br><img alt="Battery Circuit.png" src="lib/media/battery-circuit.png"><br>
-<br>The longer line (on the right) represents the positive end of the battery. 
-<br>The shorter line (on the left) represents the negative end of the battery.
-<br><br>Current () is the rate at which charge flows through a surface.<br>Current is represented mathematically as<br><br>Or, the change in charge () over time ().<br>Current is measured in Amperes (often shortened to "Amps"). One Ampere () is equal to one Coulomb per second.<br><br>The total charge is typically measured in Ampere-hours and can be found using:<br><br><br>Conventional current flows from positive terminal to the negative terminal. Conventional current is how we assume current will flow. In other words, it's defined as the direction that positive charge flows.<br>Note that negative charges flow in the opposite direction.<br>Moving charges in a circuit are called "charge carriers."<br><br>Resistance () opposes the current. You can imagine this like friction.<br>Resistance is found using<br><br>where<br>
-<br> is the change in voltage
-<br> is <a data-href="#Current" href="about:blank#Current" class="internal-link" target="_self" rel="noopener">Current</a>
-<br>Resistance is measured in Ohms (). One Ohm is equal to one Volt per Ampere.<br><br>Ohm's Law states that<br><br><br>Resistors let you resist electricity.<br>There are two different symbols for resistor. This one shows the ANSI standard used in the United States:<br><img alt="Resistor Symbol - United States.png" src="lib/media/resistor-symbol-united-states.png"><br>And this one shows the IEC standard used internationally.<br><img alt="Resistor Symbol - International.png" src="lib/media/resistor-symbol-international.png"><br>Resistors may also have color codes on them telling you how much their resistance is.<br><br>Resistivity is the resistance of an Ohmic conductor. Examples of Ohmic conductors include metals.<br>Resistivity is found using:<br><br>where<br>
-<br> is the resistance
-<br> is the resistivity constant. It depends on the material used.
-<br> is the area of a slice of wire
-<br> is the length of the wire
-<br><br>Resistivity can vary due to temperature. You can measure this using<br><br>where<br>
-<br> is the <a data-href="#Resistivity" href="about:blank#Resistivity" class="internal-link" target="_self" rel="noopener">Resistivity</a> at temperature 
-<br> is the <a data-href="#Resistivity" href="about:blank#Resistivity" class="internal-link" target="_self" rel="noopener">Resistivity</a> at temperature 
-<br> is a constant that varies depending on the temperature and metal used
-<br>Resistance can also vary due to temperature too<br><br>
-<br> is the <a data-href="#Resistance" href="about:blank#Resistance" class="internal-link" target="_self" rel="noopener">Resistance</a> at temperature 
-<br> is the <a data-href="#Resistance" href="about:blank#Resistance" class="internal-link" target="_self" rel="noopener">Resistance</a> at temperature 
-<br> is a constant that varies depending on the temperature and metal used
-<br>Warning
-These linear estimations only work on a small range of temperatures outside of .
-]]></description><link>phy-2049-physics-2/25-electric-current-and-resistance-phy-2049.html</link><guid isPermaLink="false">PHY 2049 - Physics 2/25 Electric Current and Resistance - PHY 2049.md</guid><pubDate>Fri, 31 May 2024 19:17:43 GMT</pubDate><enclosure url="lib/media/battery-circuit.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib/media/battery-circuit.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[PHY 2049 - Physics 2 with Calculus]]></title><description><![CDATA[ 
- <br>Related:<br>
-Last modified: 2024-06-01 14:16:08<br><br><br>Physics 2 focuses on electricity, magnetism, and light.<br>Requirements<br>
-<br><a data-href="PHY 2048 - Physics 1 with Calculus" href="phy-2048-physics-1/phy-2048-physics-1-with-calculus.html" class="internal-link" target="_self" rel="noopener">PHY 2048 - Physics 1 with Calculus</a>
-<br>Physics 2 focuses on electricity, magnetism, and light.<br>
-<br><a data-href="21 Electric Charge - PHY 2049" href="phy-2049-physics-2/21-electric-charge-phy-2049.html" class="internal-link" target="_self" rel="noopener">21 Electric Charge - PHY 2049</a>
-<br><a data-href="22 Gauss's Law - PHY 2049" href="phy-2049-physics-2/22-gauss's-law-phy-2049.html" class="internal-link" target="_self" rel="noopener">22 Gauss's Law - PHY 2049</a>
-<br><a data-href="23 Electric Potential - PHY 2049" href="phy-2049-physics-2/23-electric-potential-phy-2049.html" class="internal-link" target="_self" rel="noopener">23 Electric Potential - PHY 2049</a>
-<br><a data-href="24 Capacitance - PHY 2049" href="phy-2049-physics-2/24-capacitance-phy-2049.html" class="internal-link" target="_self" rel="noopener">24 Capacitance - PHY 2049</a>
-<br><a data-href="25 Electric Current and Resistance - PHY 2049" href="phy-2049-physics-2/25-electric-current-and-resistance-phy-2049.html" class="internal-link" target="_self" rel="noopener">25 Electric Current and Resistance - PHY 2049</a>
-<br><a data-href="26 DC Circuits - PHY 2049" href="26 DC Circuits - PHY 2049" class="internal-link" target="_self" rel="noopener">26 DC Circuits - PHY 2049</a>
-<br><a data-href="27 Magnetism - PHY 2049" href="27 Magnetism - PHY 2049" class="internal-link" target="_self" rel="noopener">27 Magnetism - PHY 2049</a>
-<br><a data-href="28 Sources of Magnetic Fields - PHY 2049" href="28 Sources of Magnetic Fields - PHY 2049" class="internal-link" target="_self" rel="noopener">28 Sources of Magnetic Fields - PHY 2049</a>
-<br><a data-href="29 Induction and Faraday's Law - PHY 2049" href="29 Induction and Faraday's Law - PHY 2049" class="internal-link" target="_self" rel="noopener">29 Induction and Faraday's Law - PHY 2049</a>
-<br><a data-href="30 Inductance and EM Oscillations - PHY 2049" href="30 Inductance and EM Oscillations - PHY 2049" class="internal-link" target="_self" rel="noopener">30 Inductance and EM Oscillations - PHY 2049</a>
-<br><a data-href="31 Maxwell's Equations - PHY 2049" href="31 Maxwell's Equations - PHY 2049" class="internal-link" target="_self" rel="noopener">31 Maxwell's Equations - PHY 2049</a>
-<br><a data-href="32 Light, Reflection, and Refraction - PHY 2049" href="32 Light, Reflection, and Refraction - PHY 2049" class="internal-link" target="_self" rel="noopener">32 Light, Reflection, and Refraction - PHY 2049</a>
-<br><a data-href="33 Lenses and Optical Instruments - PHY 2049" href="33 Lenses and Optical Instruments - PHY 2049" class="internal-link" target="_self" rel="noopener">33 Lenses and Optical Instruments - PHY 2049</a>
-<br><a data-href="34 Wave Nature of Light - PHY 2049" href="34 Wave Nature of Light - PHY 2049" class="internal-link" target="_self" rel="noopener">34 Wave Nature of Light - PHY 2049</a>
-<br><br>This list contains all the commonly used constants used in Physics 2.<br>]]></description><link>phy-2049-physics-2/phy-2049-physics-2-with-calculus.html</link><guid isPermaLink="false">PHY 2049 - Physics 2/PHY 2049 - Physics 2 with Calculus.md</guid><pubDate>Sat, 01 Jun 2024 18:16:08 GMT</pubDate></item><item><title><![CDATA[01 Introduction to Statistics - STA 2023]]></title><description><![CDATA[ 
+]]></description><link>phy-2049-physics-2/21-electric-charge-phy-2049.html</link><guid isPermaLink="false">PHY 2049 - Physics 2/21 Electric Charge - PHY 2049.md</guid><pubDate>Fri, 31 May 2024 19:12:40 GMT</pubDate><enclosure url="lib/media/electric-field-lines.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src="lib/media/electric-field-lines.png"&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[01 Introduction to Statistics - STA 2023]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Data are collections of observations, like measurements, genders, or survey responses.
 
